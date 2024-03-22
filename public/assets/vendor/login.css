@@ -1,0 +1,518 @@
+﻿html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+    padding: 10px;
+    margin: 0;
+    font-family: Verdana;
+    font-size: 11px;
+    background-color: #EFEFEF;
+}
+
+h3
+{
+    font-family: "Trajan Pro" , Verdana;
+    font-size: 16px;
+    margin: 30px 0;
+    padding: 0;
+}
+
+p
+{
+    line-height: 20px;
+}
+
+.page
+{
+    width: 100%;
+}
+
+.icon
+{
+    height: 60px;
+    text-align: right;
+    background: url(../images/header-ojk.png) 0 0 no-repeat;
+    position: relative;
+    clear: both;
+}
+
+.icon a,
+input[type=submit] 
+{
+    border: 0;
+    display: inline-block;
+	color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #666;
+    padding: 10px 20px;
+}
+
+.icon a:hover,
+input[type=submit]:hover 
+{
+    background: red;
+}
+
+.form 
+{
+    padding: 20px 10px;
+}
+
+.form .required
+{
+    font-weight: bold;
+    color: red;
+}
+
+.form .title
+{
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.form fieldset
+{
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.form input[type=text],
+.form input[type=password],
+.form select,
+.form textarea
+{
+    border: none;
+    box-shadow: inset 1px -1px 2px #DBE0E4;
+    border: 1px solid #CCC;
+    padding: 5px 10px;
+    font-family: verdana;
+    font-size: 11px;
+    color: #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form textarea 
+{
+    resize: none;
+}
+
+.form td:first-child
+{
+    width: 200px;
+}
+
+.form input[type=checkbox]
+{
+    float: left;
+    
+}
+
+.form span.checkbox {
+    display: inline-block;
+    float: left;
+    padding: 0 5px;
+    width: 97%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    .icon
+    {
+        width: 100%;
+        margin: 20px auto 50px;
+        padding: 70px 0 0;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    .icon
+    {
+        width: 100%;
+        margin: 20px auto 50px;
+        padding: 70px 0 0;
+    }
+}
+
+@media (min-width: 680px)
+{
+    .icon
+    {
+        max-width: 980px;
+        margin: 50px auto 0;
+        padding: 20px 0 0;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    #wrapper
+    {
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    #wrapper
+    {
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+}
+
+@media (min-width: 680px)
+{
+    #wrapper
+    {
+        max-width: 980px;
+        margin: 0 auto 10px;
+    }
+}
+
+.more
+{
+    height: 40px;
+    margin: 0 auto;
+    background-color: #666;
+    box-shadow: inset 0 0 5px #333;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    color: #FFF;
+    z-index: 6;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    .more 
+    {
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    .more 
+    {
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 680px)
+{
+    .more 
+    {
+        max-width: 980px;
+    }
+}
+
+.more:hover
+{
+    background-color: #FF0000;
+    box-shadow: inset 0 0 5px #660000;
+}
+
+.article 
+{
+    width: 100%;
+    background-color: #FFF;
+}
+
+.form
+{
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 10px 20px;
+    box-shadow: 0 0 7px #CCC;
+    position: relative;
+    z-index: 6;
+}
+
+.contents
+{
+    
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 10px 20px;
+    box-shadow: 0 0 7px #CCC;
+    position: relative;
+    z-index: 6;
+    display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    .form
+    {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .contents 
+    {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    .form
+    {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .contents 
+    {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+@media (min-width: 680px)
+{
+    .form
+    {
+        width: 940px;
+    }
+
+    .contents 
+    {
+        width: 940px;
+    }
+}
+
+.footer
+{
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    .footer
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    .footer
+    {
+        width: 100%;
+    }
+}
+
+@media (min-width: 680px)
+{
+    .footer 
+    {
+        max-width: 960px;
+    }
+}
+
+#Uname
+{
+    background: #FFF url(../images/user.png) 10px center no-repeat;
+}
+
+#Pass
+{
+    background: #FFF url(../images/pass.png) 10px center no-repeat;
+}
+
+#Uname, #Pass
+{
+    border: none;
+    box-shadow: inset 1px -1px 2px #DBE0E4;
+    border: 1px solid #CCC;
+    padding: 10px 20px 10px 30px;
+    font-family: verdana;
+    font-size: 11px;
+    color: #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    #Uname, #Pass
+    {
+        width: 100%;
+    }
+
+    #Pass
+    {
+        margin: 7px 0;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    #Uname, #Pass
+    {
+        width: 100%;
+    }
+
+    #Pass
+    {
+        margin: 7px 0;
+    }
+}
+
+@media (min-width: 680px)
+{
+    #Uname, #Pass
+    {
+        width: 200px;
+        margin-right: 10px;
+    }
+}
+
+.validation-summary-errors
+{
+    color: Red;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.validation-summary-errors ul, .validation-summary-valid ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.validation-summary-errors ul li, .validation-summary-valid ul li
+{
+    margin: 0;
+    padding: 0;
+}
+
+.button
+{
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #666;
+    padding: 0 20px;
+    height: 34px;
+    font-family: Verdana;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    .button
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    .button
+    {
+        width: 100%;
+    }
+}
+
+@media (min-width: 680px)
+{
+
+}
+
+.button:hover
+{
+    background: #FF0000;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    .theme-light .nivo-controlNav 
+    {
+        height: 20px;
+    }
+    .theme-light .nivo-controlNav a 
+    {
+        height: 20px;
+        width: 34px;
+        box-sizing: border-box;
+    }
+    .theme-light .nivo-controlNav a span
+    {
+        display: none;
+    }   
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    .theme-light .nivo-controlNav 
+    {
+        height: 20px;
+    }
+    .theme-light .nivo-controlNav a 
+    {
+        height: 20px;
+        width: 34px;
+        box-sizing: border-box;
+    }
+    .theme-light .nivo-controlNav a span
+    {
+        display: none;
+    }   
+}
+
+.clear
+{
+    clear: both;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)
+{
+    .clear
+    {
+        height: 15px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 679px) 
+{
+    .clear
+    {
+        height: 15px;
+    }
+}
