@@ -60,3 +60,197 @@ in APPPATH\Controllers\LaporController.php on line 88.
  7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
 INFO - 2024-03-22 03:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 04:19:23 --> Error: Call to a member function isValid() on array
+in APPPATH\Controllers\LaporController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:20:25 --> ParseError: syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\LaporController.php on line 56.
+ 1 SYSTEMPATH\Router\Router.php(515): CodeIgniter\Router\AutoRouter->getRoute('laporcontroller/save', 'post')
+ 2 SYSTEMPATH\Router\Router.php(211): CodeIgniter\Router\Router->autoRoute('laporcontroller/save')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('laporcontroller/save')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:20:43 --> ParseError: Unmatched '}'
+in APPPATH\Controllers\LaporController.php on line 63.
+ 1 SYSTEMPATH\Router\Router.php(515): CodeIgniter\Router\AutoRouter->getRoute('laporcontroller/save', 'post')
+ 2 SYSTEMPATH\Router\Router.php(211): CodeIgniter\Router\Router->autoRoute('laporcontroller/save')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('laporcontroller/save')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:21:03 --> ErrorException: Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 327.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\wbs-ci\\system\\Database\\Query.php', 327)
+ 2 SYSTEMPATH\Database\Query.php(327): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `data` (`sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `created_at`, `updated_at`) VALUES (:sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :created_at:, :updated_at:)', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `created_at`, `updated_at`) VALUES (:sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :created_at:, :updated_at:)', [...], false)
+ 7 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 8 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 9 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+10 APPPATH\Controllers\LaporController.php(38): CodeIgniter\Model->insert([...])
+11 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:21:30 --> Error: Call to a member function isValid() on array
+in APPPATH\Controllers\LaporController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:25:41 --> ParseError: syntax error, unexpected token "}"
+in APPPATH\Controllers\LaporController.php on line 80.
+ 1 SYSTEMPATH\Router\Router.php(515): CodeIgniter\Router\AutoRouter->getRoute('laporcontroller/save', 'post')
+ 2 SYSTEMPATH\Router\Router.php(211): CodeIgniter\Router\Router->autoRoute('laporcontroller/save')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('laporcontroller/save')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:26:15 --> ParseError: syntax error, unexpected identifier "print_r", expecting "]"
+in APPPATH\Controllers\LaporController.php on line 78.
+ 1 SYSTEMPATH\Router\Router.php(515): CodeIgniter\Router\AutoRouter->getRoute('laporcontroller/save', 'post')
+ 2 SYSTEMPATH\Router\Router.php(211): CodeIgniter\Router\Router->autoRoute('laporcontroller/save')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('laporcontroller/save')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:26:22 --> ParseError: syntax error, unexpected identifier "print_r", expecting "]"
+in APPPATH\Controllers\LaporController.php on line 78.
+ 1 SYSTEMPATH\Router\Router.php(515): CodeIgniter\Router\AutoRouter->getRoute('laporcontroller/save', 'post')
+ 2 SYSTEMPATH\Router\Router.php(211): CodeIgniter\Router\Router->autoRoute('laporcontroller/save')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('laporcontroller/save')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:26:58 --> Error: Call to a member function isValid() on array
+in APPPATH\Controllers\LaporController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:30:22 --> Error: Call to a member function isValid() on array
+in APPPATH\Controllers\LaporController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:30:34 --> Error: Call to a member function isValid() on array
+in APPPATH\Controllers\LaporController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-22 04:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 04:37:35 --> Error: Call to a member function getRandomName() on null
+in APPPATH\Controllers\LaporController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:38:50 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::hasFile()
+in APPPATH\Controllers\LaporController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-22 04:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 04:46:41 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::hasFile()
+in APPPATH\Controllers\LaporController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-22 04:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 04:49:12 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\LaporController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:50:29 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\LaporController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:50:33 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\LaporController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:51:12 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\LaporController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-22 04:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 04:53:44 --> ParseError: syntax error, unexpected token "}"
+in APPPATH\Controllers\LaporController.php on line 80.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LaporController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LaporController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\LaporController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:54:58 --> Error: Call to a member function getRandomName() on null
+in APPPATH\Controllers\LaporController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:55:42 --> Error: Call to a member function isValid() on array
+in APPPATH\Controllers\LaporController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-22 05:41:52 --> Error: Call to a member function isValid() on array
+in APPPATH\Controllers\LaporController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-22 08:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 08:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 08:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 08:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
