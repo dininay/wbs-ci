@@ -332,7 +332,7 @@
                       <label for="dokumen" class="col-sm-3 col-form-label form-label">Dokumen Pendukung Lainnya<font color="#FF0509">*</font></label>
 
                       <div class="col-sm-9">
-                      <input type="file" name="dokumen[]" id="dokumen" class="form-control" multiple>
+                      <input type="file" name="dokumen" id="dokumen" class="form-control" multiple>
                       </div>
                   </div>
               </div>
