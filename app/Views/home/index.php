@@ -13,7 +13,7 @@
 ?>
 
   <!-- ========== END HEADER ========== -->
-
+  
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Swiper Slider -->
@@ -240,28 +240,41 @@
           </div>
           <!-- End Heading -->
 
-          <form>
+          <form id="searchForm">
             <!-- Input Card -->
             <div class="input-card input-card-sm border mb-3">
               <div class="input-card-form">
-                <label for="subscribeForm" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
-                <input type="text" class="form-control form-control-lg" id="subscribeForm" placeholder="Masukan Nomor Pengaduan" aria-label="Masukan Nomor Pengaduan">
+                <label for="searchInput" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
+                <input type="text" class="form-control form-control-lg" id="searchInput" placeholder="0000-wbs-00-000" aria-label="Masukan Nomor Pengaduan">
               </div>
-              <button type="button" class="btn btn-primary btn-lg">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-lg">Kirim</button>
             </div>
             <!-- End Input Card -->
           </form>
-        </div>
-      </div>
+          
+          <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="searchModalLabel">Informasi Pengaduan</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p id="searchResultText"></p>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
+</div>
 
-    <div class="container">
+<div class="container">
       <div class="w-lg-75 mx-lg-auto">
         <div class="card card-sm overflow-hidden">
           <!-- Card -->
           <div class="card-body">
             <div class="row justify-content-md-start align-items-md-center text-center text-md-start">
-              <div class="col-md offset-md-3 mb-3 mb-md-0">
+              <div class="col-md offset-md-1 mb-1 mb-md-0">
                 <h4 class="card-title">Anda sudah siap membuat laporan/pengaduan ?</h4>
               </div>
 
@@ -271,15 +284,15 @@
             </div>
 
             <!-- SVG Shape -->
-            <figure class="w-25 d-none d-md-block position-absolute top-0 start-0 mt-n2">
-              <img class="card-img" src="assets/svg/illustrations/apps.svg" alt="Image Description">
-            </figure>
+            
             <!-- End SVG Shape -->
           </div>
           <!-- End Card -->
         </div>
       </div>
     </div>	
+
+    
 	<!-- Icon Blocks -->
     <div class="overflow-hidden">
       <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-1 content-space-b-lg-3">
@@ -498,5 +511,69 @@
     echo view("layout/js.php")
   ?>
 
+<script>
+    // Mendapatkan elemen input, form pencarian, dan elemen div untuk menampilkan hasil pencarian
+    const searchInput = document.getElementById('searchInput');
+  const searchForm = document.getElementById('searchForm');
+  const searchResultDiv = document.getElementById('searchResult');
+
+  // Menambahkan event listener untuk event "submit" form pencarian
+  searchForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Mencegah form untuk melakukan submit secara default
+
+  const searchValue = searchInput.value.trim(); // Mendapatkan nilai ID yang dimasukkan oleh pengguna
+
+  // Lakukan pengecekan apakah ID kosong atau tidak
+  if (searchValue === '') {
+    alert('Silakan masukkan ID untuk melakukan pencarian.');
+    return; // Hentikan eksekusi jika ID kosong
+  }
+
+  // Lakukan pengecekan apakah ID valid
+  const idRegex = /^\d{4}-wbs-\d{2}-\d{3}$/;
+  if (!idRegex.test(searchValue)) {
+    alert('Format ID tidak valid. Format yang diizinkan: XXXX-wbs-XX-XXX');
+    return; // Hentikan eksekusi jika ID tidak valid
+  }
+
+  // Kirim permintaan AJAX ke backend untuk melakukan pencarian data berdasarkan ID
+  fetch('/searchData?id=' + searchValue)
+    .then(response => response.json())
+    .then(data => {
+      // Tampilkan pesan dalam modal
+      const modalTitle = document.getElementById('searchModalLabel');
+      const modalBody = document.getElementById('searchResultText');
+
+      if (data) {
+        modalTitle.innerText = 'Informasi Pengaduan';
+        modalBody.innerText = 'Data dengan ID ' + searchValue + ' sedang dalam proses peninjauan. Cek email secara berkala untuk mendapatkan informasi status pengaduan anda.';
+      } else {
+        modalTitle.innerText = 'Error';
+        modalBody.innerText = 'Data dengan ID ' + searchValue + ' tidak ditemukan.';
+      }
+
+      // Tampilkan modal
+      const searchModal = new bootstrap.Modal(document.getElementById('searchModal'));
+      searchModal.show();
+    })
+    .catch(error => {
+      console.error('Terjadi kesalahan:', error);
+    });
+
+  // Kosongkan nilai input pencarian setelah pencarian selesai
+  searchInput.value = '';
+});
+</script>
+
+<script>
+    // Ambil parameter success dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const success = urlParams.get('success');
+
+    // Jika parameter success bernilai true, tampilkan popup
+    if (success === 'true') {
+        $('#successModal').modal('show'); // Tampilkan modal
+    }
+</script>
 </body>
 </html>

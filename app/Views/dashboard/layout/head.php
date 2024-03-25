@@ -18,5 +18,5 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="<?= base_url('assetsdashboard/css/vertical-layout-light/style.css');?>">
   <!-- endinject -->
-  <link rel="shortcut icon" href="<?= base_url('assetsdashboard/images/favicon.png');?>" />
+    <link rel="shortcut icon" href="./assets/img/logo.png">
 </head>

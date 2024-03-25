@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-    echo view("dashboard/layout//head.php")
+    echo view("dashboard/layout/head.php")
 ?>
 
 <body>
@@ -10,12 +10,12 @@
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_navbar.html -->
       <?php
-      echo view("dashboard/layout//navbar.php")
+      echo view("dashboard/layout/navbar.php")
       ?>
       <!-- partial -->
       <!-- Sidebar -->
       <?php
-      echo view("dashboard/layout//sidebar.php")
+      echo view("dashboard/layout/sidebar.php")
       ?>
       <!-- partial -->
       <div class="main-panel">
@@ -24,68 +24,48 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Pengaduan</h4>
+                  <div class="col-6 justify-content-end">
+                  <!-- <form id="searchForm" action="/dashboard/dataLapor" method="post">
+                      <div class="input-group mb-3">
+                          <input type="text" class="form-control" id="keyword" placeholder="Masukkan Keyword Pencarian" aria-label="Recipient's username" aria-describedby="basic-addon2" name="keyword">
+                          <div class="input-group-append">
+                              <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
+                          </div>
+                      </div>
+                  </form> -->
+
+                  </div>
                   <div id="dataLapor" class="table-responsive">
                     <div class="table-responsive">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="searchInput" placeholder="Cari...">
-                        </div>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
+                                      <th >No</th>
                                         <th>ID Pengaduan</th>
                                         <th>Sifat Pelapor</th>
-                                        <th>Nama</th>
-                                        <th>Nomor Identitas</th>
-                                        <th>Jenis Kelamin</th>
-                                        <th>Alamat</th>
-                                        <th>Email</th>
-                                        <th>Nomor Telepon</th>
                                         <th>Jenis Pelanggaran</th>
-                                        <th>Nama Terlapor</th>
-                                        <th>Divisi</th>
-                                        <th>Departemen</th>
-                                        <th>Waktu</th>
-                                        <th>Lokasi</th>
-                                        <th>Kronologi</th>
-                                        <th>Nominal Kerugian</th>
-                                        <th>Dokumen</th>
+                                        <th>Status</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                  <?php $i = 1 + (10 * ($currentPage - 1)); ?>
                                     <?php foreach ($data as $item): ?>
                                     <tr>
+                                      <td scope="row"><?= $i++; ?></td>
                                         <td><?php echo $item['id']; ?></td>
                                         <td><?php echo $item['sifat_pelapor']; ?></td>
-                                        <td><?php echo $item['firstName']; ?></td>
-                                        <td><?php echo $item['noIdentitas']; ?></td>
-                                        <td><?php echo $item['jk']; ?></td>
-                                        <td><?php echo $item['alamat']; ?></td>
-                                        <td><?php echo $item['email']; ?></td>
-                                        <td><?php echo $item['phone']; ?></td>
                                         <td><?php echo $item['jenisPelanggaran']; ?></td>
-                                        <td><?php echo $item['firstNameTerlapor']; ?></td>
-                                        <td><?php echo $item['divisi']; ?></td>
-                                        <td><?php echo $item['departemen']; ?></td>
-                                        <td><?php echo $item['waktu']; ?></td>
-                                        <td><?php echo $item['lokasi']; ?></td>
-                                        <td><?php echo $item['kronologi']; ?></td>
-                                        <td><?php echo $item['nominalKerugian']; ?></td>
-                                        <td><?php echo $item['dokumen']; ?></td>
+                                        <td><?php echo $item['status']; ?></td>
                                         <td>
-                                            <a class="badge badge-warning" href="<?php echo site_url('dashboard/edit/'.$item['noIdentitas']); ?>">
-                                                <p class="fa fa-edit">Edit</p>
-                                            </a>
-                                            <a type="button" rel="tooltip" title="Hapus" class="badge badge-danger" onclick="deleteConfirm('<?php echo site_url('dashboard/delete/'.$item['noIdentitas']); ?>')">
-                                                <p class="fa fa-trash">Hapus</p>
-                                            </a>
+                                            <a href="/dashboardcontroller/detail/<?= $item['id']; ?>" class="btn btn-primary btn-sm">Detail</a>
                                         </td>
                                     </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                             </table>
                         <div class="pagination justify-content-center">
-                            <?= $pager->links() ?>
+                            <?= $pager->links('data','dataLapor_pagination') ?>
                         </div>
                     </div>
                   </div>
@@ -94,14 +74,32 @@
             </div>
         </div>
           <?php
-            echo view("dashboard/layout//footer.php")
+            echo view("dashboard/layout/footer.php")
           ?>
       </div>
     </div>
   </div>
   <!-- container-scroller -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#searchForm').on('submit', function(e) {
+            e.preventDefault(); // Mencegah pengiriman formulir secara tradisional
+
+            var formData = $(this).serialize();
+            $.ajax({
+                url: $(this).attr('action'), // Menggunakan URL aksi formulir
+                method: $(this).attr('method'),
+                data: formData,
+                success: function(response) {
+                    $('#dataLapor').html(response); // Memperbarui tabel data dengan hasil pencarian
+                }
+            });
+        });
+    });
+</script>
   <?php
-    echo view("dashboard/layout//js.php")
+    echo view("dashboard/layout/js.php")
   ?>
 </body>
 

@@ -1,0 +1,70 @@
+ERROR - 2024-03-24 07:49:58 --> mysqli_sql_exception: Column 'noIdentitas' cannot be null in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(92): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2024-03-24 09:20:16 --> mysqli_sql_exception: Duplicate entry '2403-wbs- 22-010' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2024-03-24 09:23:05 --> mysqli_sql_exception: Duplicate entry '2403-wbs- 21-010' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2024-03-24 09:33:03 --> mysqli_sql_exception: Duplicate entry '2403-wbs- 21-012' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(129): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-24 14:11:13 --> ErrorException: Array to string conversion
+in SYSTEMPATH\Database\BaseBuilder.php on line 2160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\wbs-ci\\system\\Database\\BaseBuilder.php', 2160)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2160): implode(',', [...])
+ 3 [internal function]: CodeIgniter\Database\BaseBuilder::CodeIgniter\Database\{closure}([...])
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2160): array_map(Object(Closure), [...])
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2219): CodeIgniter\Database\BaseBuilder->formatValues([...])
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1794): CodeIgniter\Database\BaseBuilder->_insertBatch('`data`', [...], [...])
+ 7 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 8 APPPATH\Controllers\LaporController.php(146): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-24 15:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 15:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 15:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -73,7 +73,7 @@
   </header>
 
   <!-- ========== END HEADER ========== -->
-
+  
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero -->
@@ -129,8 +129,8 @@
                         <!-- Radio Check -->
                         <label class="form-control" for="sp_anonymous">
                           <span class="form-check">
-                            <input type="radio" class="form-check-input" name="sifat_pelapor" id="sp_anonymous">
-                            <span class="form-check-label" value="Anonymous">Anonymous</span>
+                            <input type="radio" class="form-check-input" name="sifat_pelapor" id="sp_anonymous" value="Anonymous">
+                            <span class="form-check-label">Anonymous</span>
                           </span>
                         </label>
                         <!-- End Radio Check -->
@@ -138,8 +138,8 @@
                         <!-- Radio Check -->
                         <label class="form-control" for="sp_terbuka">
                           <span class="form-check">
-                            <input type="radio" class="form-check-input" name="sifat_pelapor" id="sp_terbuka" checked>
-                            <span class="form-check-label" value="Terbuka">Terbuka</span>
+                            <input type="radio" class="form-check-input" name="sifat_pelapor" id="sp_terbuka" value="Terbuka" checked>
+                            <span class="form-check-label">Terbuka</span>
                           </span>
                         </label>
                         <!-- End Radio Check -->
@@ -162,7 +162,7 @@
                     <label for="noIdentitas" class="col-sm-3 col-form-label form-label">No.Identitas <font color="#FF0509">*</font></label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" name="noIdentitas" id="noIdentitas" placeholder="" aria-label="" value="">
+                      <input type="text" class="form-control" name="noIdentitas" id="noIdentitas" placeholder="No Identitas (ID Pegawai)" aria-label="" value="">
                     </div>
                   </div>
 
@@ -197,7 +197,7 @@
                     <label class="col-sm-3 col-form-label form-label" for="alamat">Alamat Lengkap Domisili <font color="#FF0509">*</font></label>
 
                     <div class="col-sm-9">
-                      <textarea type="text" class="form-control" name="alamat" id="alamat" rows="10" cols="50" placeholder="" aria-label="" value="">
+                      <textarea type="text" class="form-control" name="alamat" id="alamat" rows="10" cols="50" placeholder="Alamat Lengkap (Nama Jalan - Kelurahan - Kecamatan - Kota)" aria-label="" >
                       </textarea>
                     </div>
                   </div>
@@ -206,7 +206,7 @@
                     <label for="email" class="col-sm-3 col-form-label form-label">Alamat Email <font color="#FF0509">*</font></label>
 
                     <div class="col-sm-9">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="" aria-label="" value="">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="gacoan@gmail.com" aria-label="" value="">
                     </div>
                   </div>
 
@@ -214,7 +214,7 @@
                     <label for="phone" class="col-sm-3 col-form-label form-label">No Telepon <font color="#FF0509">*</font></label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" name="phone" id="phone" placeholder="" aria-label="" value="">
+                      <input type="text" class="form-control" name="phone" id="phone" placeholder="+62 8123 4567 890" aria-label="" value="">
                     </div>
                   </div>
                 </div>
@@ -275,12 +275,12 @@
                   </div>
 
                   <div class="row mb-4">
-                    <label class="col-sm-3 col-form-label form-label">Nama Awal Terlapor <font color="#FF0509">*</font></label>
+                    <label class="col-sm-3 col-form-label form-label">Nama Terlapor <font color="#FF0509">*</font></label>
 
                     <div class="col-sm-9">
                       <div class="input-group">
-                        <input type="text" class="form-control" name="firstNameTerlapor" id="firstNameTerlapor" placeholder="" aria-label="" value="">
-                        <input type="text" class="form-control" name="lastNameTerlapor" id="lastNameTerlapor" placeholder="" aria-label="" value="">
+                        <input type="text" class="form-control" name="firstNameTerlapor" id="firstNameTerlapor" placeholder="Nama Awal" aria-label="" value="">
+                        <input type="text" class="form-control" name="lastNameTerlapor" id="lastNameTerlapor" placeholder="Nama Akhir" aria-label="" value="">
                       </div>
                     </div>
                   </div>
@@ -290,8 +290,8 @@
 
                     <div class="col-sm-9">
                       <div class="input-group">
-                        <input type="text" class="form-control" name="divisi" id="divisiLabel" placeholder="" aria-label="" value="">
-                        <input type="text" class="form-control" name="departemen" id="departemenLabel" placeholder="" aria-label="" value="">
+                        <input type="text" class="form-control" name="divisi" id="divisiLabel" placeholder="Divisi" aria-label="" value="">
+                        <input type="text" class="form-control" name="departemen" id="departemenLabel" placeholder="Departemen" aria-label="" value="">
                       </div>
                     </div>
                   </div>
@@ -308,14 +308,14 @@
                     <label for="lokasi" class="col-sm-3 col-form-label form-label">Lokasi Kejadian <font color="#FF0509">*</font></label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" name="lokasi" id="lokasi" placeholder="" aria-label="" value="">
+                      <input type="text" class="form-control" name="lokasi" id="lokasi" placeholder="Lokasi Kejadian" aria-label="" value="">
                     </div>
                   </div>
 
                   <div class="row mb-4">
                     <label for="kronologi" class="col-sm-3 col-form-label form-label">Kronologi Kejadian<font color="#FF0509">*</font></label>
                     <div class="col-sm-9">
-                      <textarea type="text" class="form-control" name="kronologi" id="kronologi" rows="10" cols="50" placeholder="" aria-label="" value="">
+                      <textarea type="text" class="form-control" name="kronologi" id="kronologi" rows="10" cols="50" placeholder="Kronologi Kejadian" aria-label="" value="">
                       </textarea>
                     </div>
                   </div>
@@ -324,7 +324,7 @@
                     <label for="nominalKerugian" class="col-sm-3 col-form-label form-label">Nominal Kerugian <font color="#FF0509">*</font></label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" name="nominalKerugian" id="nominalKerugian" placeholder="" aria-label="" value="">
+                      <input type="text" class="form-control" name="nominalKerugian" id="nominalKerugian" placeholder="Rp. 0" aria-label="" value="">
                     </div>
                   </div>
 
@@ -332,7 +332,7 @@
                       <label for="dokumen" class="col-sm-3 col-form-label form-label">Dokumen Pendukung Lainnya<font color="#FF0509">*</font></label>
 
                       <div class="col-sm-9">
-                      <input type="file" name="dokumen" id="dokumen" class="form-control" multiple>
+                      <input type="file" name="dokumen" id="dokumen[]" class="form-control" multiple>
                       </div>
                   </div>
               </div>
@@ -526,6 +526,8 @@
   <!-- JS Plugins Init. -->
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     (function() {
       // INITIALIZATION OF HEADER
@@ -627,20 +629,22 @@
             inputLastName.value = ''; // Mengosongkan nilai input
             inputNoIdentitas.value = ''; // Mengosongkan nilai input
             inputNoIdentitas.value = null;
-        }
-    });
-
-    radioAnonymous.addEventListener('change', function() {
-    if (this.checked) {
-        document.getElementById('sifat_pelapor').value = 'Anonymous';
+          } else {
+        // Mengembalikan input menjadi tidak disabled jika radio button bukan anonymous
+        inputFirstName.disabled = false;
+        inputLastName.disabled = false;
+        inputNoIdentitas.disabled = false;
     }
-    });
+});
 
-    radioTerbuka.addEventListener('change', function() {
-        if (this.checked) {
-            document.getElementById('sifat_pelapor').value = 'Terbuka';
-        }
-    });
+radioTerbuka.addEventListener('change', function() {
+    if (this.checked) {
+        document.getElementById('sifat_pelapor').value = 'Terbuka';
+        inputFirstName.disabled = false;
+        inputLastName.disabled = false;
+        inputNoIdentitas.disabled = false;
+    }
+});
 
             // Menangani penyesuaian nilai sifat_pelapor dan noIdentitas sebelum mengirimkan data ke server
     document.querySelector('form').addEventListener('submit', function(event) {
@@ -673,38 +677,33 @@
             submitBtn.disabled = true;
         }
     });
-    // Tambahkan event listener untuk tombol "Add phone"
-    addPhoneFieldBtn.addEventListener('click', function() {
-        // Buat input field baru
-        var newPhoneField = document.createElement('div');
-        newPhoneField.classList.add('input-group', 'mb-3');
-        newPhoneField.innerHTML = `
-            <input type="text" class="js-input-mask form-control" name="phone[]" placeholder="" aria-label=""
-                data-hs-mask-options='{"mask": ""}'>
-            <div class="tom-select-custom">
-                <select class="js-select form-select" name="phoneSelect[]"
-                    data-hs-tom-select-options='{"width": "8rem", "hideSearch": true}'>
-                    <option value="Mobile" selected>Mobile</option>
-                    <option value="Home">Home</option>
-                    <option value="Work">Work</option>
-                </select>
-            </div>
-            <div class="input-group-append">
-                <button class="btn btn-outline-danger remove-phone-field" type="button">Remove</button>
-            </div>
-        `;
-
-        // Tambahkan input field baru ke dalam container
-        phoneFieldsContainer.appendChild(newPhoneField);
-
-        // Tambahkan event listener untuk tombol "Remove"
-        var removeBtn = newPhoneField.querySelector('.remove-phone-field');
-        removeBtn.addEventListener('click', function() {
-            newPhoneField.remove();
-        });
-    });
-
     
   </script>
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Sukses!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Data berhasil dikirimkan! Tekan OK untuk kembali ke halaman utama.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    // Ambil parameter success dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const success = urlParams.get('success');
+
+    // Jika parameter success bernilai true, tampilkan popup
+    if (success === 'true') {
+        $('#successModal').modal('show'); // Tampilkan modal
+    }
+</script>
 </body>
 </html>
