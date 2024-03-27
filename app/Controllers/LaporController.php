@@ -6,6 +6,9 @@ use App\Models\LaporModels;
 use CodeIgniter\Controller;
 use CodeIgniter\Files\File;
 use Error;
+use CodeIgniter\HTTP\IncomingRequest;
+use CodeIgniter\HTTP\Response;
+use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\I18n\Time;
 use Config\Services;
 
@@ -38,28 +41,25 @@ class LaporController extends Controller
         // Mendapatkan tahun dua digit
         $year = substr(Time::now()->getYear(), -2);
 
-        // Mendapatkan angka terakhir dari ID di database, jika ada
-        $lastID = $this->laporModels->getMaxID();
-
-        // Jika belum ada data sama sekali, set ID pertama menjadi 0
-        if (!$lastID) {
-            $lastID = '0';
-        }
-
         // Mendapatkan bagian YYMM dari format ID
         $yearMonth = $year . Time::now()->format('m');
 
         // Mendapatkan bagian WBS sesuai dengan gender dan privacy
         $wbs = ($gender == 'Laki-laki' ? '1' : '2') . ($privacy == 'Anonymous' ? '1' : '2');
 
+        // Mendapatkan ID terakhir dari model
+        $lastID = $this->laporModels->getMaxID();
+
         // Mendapatkan bagian 3 digit terakhir dari ID
-        $sequence = str_pad(intval($lastID) + 1, 3, '0', STR_PAD_LEFT);
+        $lastSequence = intval(substr($lastID, -3)); // Ambil tiga angka terakhir dan ubah ke integer
+        $nextSequence = $lastSequence + 1;
 
         // Menggabungkan semua bagian untuk mendapatkan ID yang lengkap
-        $id = $yearMonth . '-wbs-' . $wbs . '-' . $sequence;
+        $newID = $yearMonth . '-wbs-' . $wbs . '-' . str_pad($nextSequence, 3, '0', STR_PAD_LEFT); // Pad dengan nol jika perlu
 
-        return $id;
+        return $newID;
     }
+
 
     public function save()
     {
@@ -68,73 +68,51 @@ class LaporController extends Controller
         $gender = $this->request->getVar('jk');
         $privacy = $this->request->getVar('sifat_pelapor');
         $id = $this->generateID($gender, $privacy);
-        // Ambil file yang diunggah
-        $files = $this->request->getFiles('dokumen');
 
-        // Validasi apakah ada file yang diunggah
-        if (empty($files)) {
-            return redirect()->back()->withInput()->with('errors', 'Anda harus mengunggah setidaknya satu file.');
-        }
-
-        $data = []; // Array untuk menampung data yang akan disimpan ke dalam database
-
-
-        foreach ($files as $file) {
-            // Periksa apakah file adalah objek UploadedFile dan apakah valid
-            try {
-                if ($file instanceof \CodeIgniter\HTTP\Files\UploadedFile) {
-                    // Validasi berkas
-                    if (!$this->validate([
-                        'dokumen' => [
-                            'uploaded[dokumen]',
-                            'mime_in[dokumen,image/jpg,image/jpeg,image/png,application/pdf]',
-                            'max_size[dokumen,4096]', // maksimum 4mb
-                        ],
-                    ])) {
-                        // Jika validasi gagal, kembali ke halaman sebelumnya dengan pesan kesalahan validasi
-                        return redirect()->back()->withInput()->with('errors', $validation->getErrors());
+        $file = [];
+        if ($this->request->getMethod() == 'post') {
+            $files = $this->request->getFiles();
+            foreach($files['dokumen'] as $dkm){
+                if($dkm->isValid() && !$dkm->hasMoved()){
+                    $fileName = $dkm->getRandomName();
+                    if($dkm->move(WRITEPATH.'uploads')){
+                        $fileNames[] = $fileName;
+                        echo "<p>".$dkm->getName()."sukses </p>";
+                    } else {
+                        echo "<p>".$dkm->getErrorString()."</p>";
                     }
-
-                    // Generate a new file name to avoid conflicts
-                    $newName = $file->getRandomName();
-
-                    if (!$file->move(WRITEPATH . 'uploads', $newName)) {
-                        // Jika gagal memindahkan file, tangani kesalahan
-                        return redirect()->back()->withInput()->with('errors', 'Gagal mengunggah file.');
-                    }
-
-                    // Simpan data formulir dan nama file ke dalam database
-                    $data = [
-                        'id' => $id,
-                        'sifat_pelapor' => $privacy,
-                        'firstName' => $this->request->getVar('firstName') . ' ' . $this->request->getVar('lastName'),
-                        'noIdentitas' => $this->request->getVar('noIdentitas'),
-                        'jk' => $gender,
-                        'alamat' => $this->request->getVar('alamat'),
-                        'email' => $this->request->getVar('email'),
-                        'phone' => $this->request->getVar('phone'),
-                        'jenisPelanggaran' => $this->request->getVar('jenisPelanggaran'),
-                        'firstNameTerlapor' => $this->request->getVar('firstNameTerlapor') . ' ' . $this->request->getVar('lastNameTerlapor'),
-                        'divisi' => $this->request->getVar('divisi'),
-                        'departemen' => $this->request->getVar('departemen'),
-                        'waktu' => $this->request->getVar('waktu'),
-                        'lokasi' => $this->request->getVar('lokasi'),
-                        'kronologi' => $this->request->getVar('kronologi'),
-                        'nominalKerugian' => $this->request->getVar('nominalKerugian'),
-                        'dokumen' => $newName,
-                        'created_at' => date('Y-m-d H:i:s'), // Tambahkan timestamp created_at
-                        'updated_at' => date('Y-m-d H:i:s') // Tambahkan timestamp updated_at
-                    ];
-                } else {
-                    return redirect()->back()->withInput()->with('errors', ['File tidak valid atau tidak diunggah.']);
                 }
-            } catch (Error) {
             }
         }
-        $data['status'] = 'Sedang Ditinjau';
-        // Simpan data ke dalam database menggunakan insertBatch()
+        
+        var_dump($fileNames);
+        $dokumenString = implode(', ', $fileNames);
+        $data = [
+            'id' => $id,
+            'sifat_pelapor' => $privacy,
+            'firstName' => $this->request->getVar('firstName') . ' ' . $this->request->getVar('lastName'),
+            'noIdentitas' => $this->request->getVar('noIdentitas'),
+            'jk' => $gender,
+            'alamat' => $this->request->getVar('alamat'),
+            'email' => $this->request->getVar('email'),
+            'phone' => $this->request->getVar('phone'),
+            'jenisPelanggaran' => $this->request->getVar('jenisPelanggaran'),
+            'firstNameTerlapor' => $this->request->getVar('firstNameTerlapor') . ' ' . $this->request->getVar('lastNameTerlapor'),
+            'divisi' => $this->request->getVar('divisi'),
+            'departemen' => $this->request->getVar('departemen'),
+            'waktu' => $this->request->getVar('waktu'),
+            'lokasi' => $this->request->getVar('lokasi'),
+            'kronologi' => $this->request->getVar('kronologi'),
+            'nominalKerugian' => $this->request->getVar('nominalKerugian'),
+            'dokumen' => $dokumenString,
+            'status' => 'Sedang Ditinjau',
+            'created_at' => date('Y-m-d H:i:s'), // Tambahkan timestamp created_at
+            'updated_at' => date('Y-m-d H:i:s') // Tambahkan timestamp updated_at
+        ];
+        //Simpan data ke dalam database menggunakan insertBatch()
         $db = \Config\Database::connect();
-        $db->table('data')->insertBatch($data);
+        $db->table('data')->insert($data);
+        var_dump($data);
 
         // Kirim email otomatis
         $email = \Config\Services::email();
@@ -184,7 +162,7 @@ class LaporController extends Controller
 
         $email->send();
 
-        session()->setFlashdata('pesan','Data berhasil direkam');
+        // session()->setFlashdata('pesan','Data berhasil direkam');
         // Redirect ke halaman yang ditentukan setelah berhasil menyimpan data
         return redirect()->to('?success=true');
     }

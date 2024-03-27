@@ -15,19 +15,18 @@ class LaporModels extends Model
 
     public function getMaxID()
     {
-        // Query untuk mendapatkan nilai maksimum ID
-        $result = $this->db->query('SELECT id FROM data ORDER BY id DESC LIMIT 1')->getRow();
-
-    // Jika tidak ada data, kembalikan 0
-    if (!$result) {
-        return 0;
+        return $this->selectMax('id')
+                    ->get()
+                    ->getRow()
+                    ->id;
     }
 
-    // Mendapatkan bagian 3 digit terakhir dari ID
-    $lastID = intval(substr($result->id, -3));
+    public function isDuplicateID($id)
+    {
+        $query = $this->where('id', $id)
+                      ->countAllResults();
 
-        // Mengembalikan nilai maksimum ID
-        return $lastID;
+        return $query > 0;
     }
 
     public function getData()

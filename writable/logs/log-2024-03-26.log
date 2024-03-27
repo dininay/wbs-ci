@@ -1,0 +1,532 @@
+CRITICAL - 2024-03-26 03:33:32 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LaporController.php on line 78.
+ 1 APPPATH\Controllers\LaporController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 03:38:23 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LaporController.php on line 81.
+ 1 APPPATH\Controllers\LaporController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 03:38:43 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LaporController.php on line 81.
+ 1 APPPATH\Controllers\LaporController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 03:41:06 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LaporController.php on line 81.
+ 1 APPPATH\Controllers\LaporController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 03:53:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\LaporController.php(165): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 04:12:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\LaporController.php(165): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 04:13:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\LaporController.php(165): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 04:13:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\LaporController.php(165): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 04:15:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\LaporController.php(164): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 04:15:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\LaporController.php(164): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 04:17:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\LaporController.php(167): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 04:23:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('', [], true)
+ 3 APPPATH\Controllers\LaporController.php(165): view('')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 04:23:38 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LaporController.php on line 80.
+ 1 APPPATH\Controllers\LaporController.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php', 80)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-26 04:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-26 04:36:56 --> ParseError: Unmatched '}'
+in APPPATH\Controllers\LaporController.php on line 293.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LaporController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LaporController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\LaporController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-26 04:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 04:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 04:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-26 07:35:09 --> ParseError: syntax error, unexpected token "}"
+in APPPATH\Controllers\LaporController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LaporController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LaporController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\LaporController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 07:36:00 --> ParseError: syntax error, unexpected token "return"
+in APPPATH\Controllers\LaporController.php on line 159.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LaporController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LaporController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\LaporController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 08:57:47 --> ParseError: Unclosed '{' on line 13
+in APPPATH\Controllers\LaporController.php on line 284.
+ 1 SYSTEMPATH\Router\Router.php(515): CodeIgniter\Router\AutoRouter->getRoute('laporcontroller/save', 'post')
+ 2 SYSTEMPATH\Router\Router.php(211): CodeIgniter\Router\Router->autoRoute('laporcontroller/save')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('laporcontroller/save')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:17:36 --> ErrorException: Undefined variable $pesan
+in APPPATH\Controllers\LaporController.php on line 163.
+ 1 APPPATH\Controllers\LaporController.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesan', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-26 16:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-26 16:26:27 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\LaporController.php on line 78.
+ 1 APPPATH\Controllers\LaporController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-26 16:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 16:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 16:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 16:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 16:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-26 16:42:51 --> mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-26 16:42:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:42:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'m                      \', \'m@gmail.com\', \'m\', \'Fraud\', \'m m\', \'m\', \'m\', \'m\', \'m\', \'m                      \', \'m\', \'1711471371_0aef92908d63d3d39fb0.png\', \'Sedang Ditinjau\', \'2024-03-26 16:42:51\', \'2024-03-26 16:42:51\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'m                      \', \'m@gmail.com\', \'m\', \'Fraud\', \'m m\', \'m\', \'m\', \'m\', \'m\', \'m                      \', \'m\', \'1711471371_0aef92908d63d3d39fb0.png\', \'Sedang Ditinjau\', \'2024-03-26 16:42:51\', \'2024-03-26 16:42:51\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:42:51 --> [Caused by] mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'m                      \', \'m@gmail.com\', \'m\', \'Fraud\', \'m m\', \'m\', \'m\', \'m\', \'m\', \'m                      \', \'m\', \'1711471371_0aef92908d63d3d39fb0.png\', \'Sedang Ditinjau\', \'2024-03-26 16:42:51\', \'2024-03-26 16:42:51\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'m                      \', \'m@gmail.com\', \'m\', \'Fraud\', \'m m\', \'m\', \'m\', \'m\', \'m\', \'m                      \', \'m\', \'1711471371_0aef92908d63d3d39fb0.png\', \'Sedang Ditinjau\', \'2024-03-26 16:42:51\', \'2024-03-26 16:42:51\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'m                      \', \'m@gmail.com\', \'m\', \'Fraud\', \'m m\', \'m\', \'m\', \'m\', \'m\', \'m                      \', \'m\', \'1711471371_0aef92908d63d3d39fb0.png\', \'Sedang Ditinjau\', \'2024-03-26 16:42:51\', \'2024-03-26 16:42:51\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:46:27 --> BadMethodCallException: Call to undefined method App\Models\LaporModels::isDuplicateID
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\LaporController.php(64): CodeIgniter\Model->__call('isDuplicateID', [...])
+ 2 APPPATH\Controllers\LaporController.php(79): App\Controllers\LaporController->generateID('Perempuan', 'Anonymous')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:46:36 --> BadMethodCallException: Call to undefined method App\Models\LaporModels::isDuplicateID
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\LaporController.php(64): CodeIgniter\Model->__call('isDuplicateID', [...])
+ 2 APPPATH\Controllers\LaporController.php(79): App\Controllers\LaporController->generateID('Perempuan', 'Anonymous')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:52:56 --> Error: Call to undefined method App\Controllers\LaporController::getMaxID()
+in APPPATH\Controllers\LaporController.php on line 50.
+ 1 APPPATH\Controllers\LaporController.php(78): App\Controllers\LaporController->generateID('Perempuan', 'Anonymous')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:53:44 --> Error: Call to undefined method App\Controllers\LaporController::getMaxID()
+in APPPATH\Controllers\LaporController.php on line 50.
+ 1 APPPATH\Controllers\LaporController.php(78): App\Controllers\LaporController->generateID('Perempuan', 'Anonymous')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:53:53 --> Error: Call to undefined method App\Controllers\LaporController::getMaxID()
+in APPPATH\Controllers\LaporController.php on line 50.
+ 1 APPPATH\Controllers\LaporController.php(78): App\Controllers\LaporController->generateID('Perempuan', 'Anonymous')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:54:26 --> ErrorException: Undefined property: App\Controllers\LaporController::$db
+in APPPATH\Controllers\LaporController.php on line 48.
+ 1 APPPATH\Controllers\LaporController.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\LaporController::$db', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php', 48)
+ 2 APPPATH\Controllers\LaporController.php(70): App\Controllers\LaporController->generateID('Perempuan', 'Anonymous')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:55:10 --> ParseError: syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\LaporController.php on line 65.
+ 1 SYSTEMPATH\Router\Router.php(515): CodeIgniter\Router\AutoRouter->getRoute('laporcontroller/save', 'post')
+ 2 SYSTEMPATH\Router\Router.php(211): CodeIgniter\Router\Router->autoRoute('laporcontroller/save')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('laporcontroller/save')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-26 16:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-26 16:59:09 --> mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-26 16:59:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:59:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472349_f3610d9a3f6f90728329.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 16:59:09\', \'2024-03-26 16:59:09\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472349_f3610d9a3f6f90728329.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 16:59:09\', \'2024-03-26 16:59:09\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 16:59:09 --> [Caused by] mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472349_f3610d9a3f6f90728329.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 16:59:09\', \'2024-03-26 16:59:09\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472349_f3610d9a3f6f90728329.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 16:59:09\', \'2024-03-26 16:59:09\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472349_f3610d9a3f6f90728329.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 16:59:09\', \'2024-03-26 16:59:09\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+ERROR - 2024-03-26 17:01:02 --> mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-26 17:01:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 17:01:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472462_9c9d362ea7aaeeb6e601.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:02\', \'2024-03-26 17:01:02\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472462_9c9d362ea7aaeeb6e601.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:02\', \'2024-03-26 17:01:02\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 17:01:02 --> [Caused by] mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472462_9c9d362ea7aaeeb6e601.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:02\', \'2024-03-26 17:01:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472462_9c9d362ea7aaeeb6e601.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:02\', \'2024-03-26 17:01:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', NULL, \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472462_9c9d362ea7aaeeb6e601.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:02\', \'2024-03-26 17:01:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+ERROR - 2024-03-26 17:01:09 --> mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-26 17:01:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 17:01:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472469_23b2087d8cfcd9f8413e.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:09\', \'2024-03-26 17:01:09\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472469_23b2087d8cfcd9f8413e.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:09\', \'2024-03-26 17:01:09\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 17:01:09 --> [Caused by] mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472469_23b2087d8cfcd9f8413e.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:09\', \'2024-03-26 17:01:09\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472469_23b2087d8cfcd9f8413e.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:09\', \'2024-03-26 17:01:09\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472469_23b2087d8cfcd9f8413e.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:01:09\', \'2024-03-26 17:01:09\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Controllers\LaporController.php(144): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+ERROR - 2024-03-26 17:04:14 --> mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-26 17:04:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 17:04:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472654_3bd9522ec95d8eac886a.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:14\', \'2024-03-26 17:04:14\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472654_3bd9522ec95d8eac886a.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:14\', \'2024-03-26 17:04:14\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 17:04:14 --> [Caused by] mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472654_3bd9522ec95d8eac886a.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:14\', \'2024-03-26 17:04:14\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472654_3bd9522ec95d8eac886a.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:14\', \'2024-03-26 17:04:14\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472654_3bd9522ec95d8eac886a.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:14\', \'2024-03-26 17:04:14\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+ERROR - 2024-03-26 17:04:20 --> mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY' in C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\wbs-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\wbs-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\wbs-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\wbs-ci\app\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(941): App\Controllers\LaporController->save()
+#6 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+#7 C:\xampp\htdocs\wbs-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\wbs-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\wbs-ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-26 17:04:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 17:04:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472660_d83ae760df59f0fd8d56.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:20\', \'2024-03-26 17:04:20\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472660_d83ae760df59f0fd8d56.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:20\', \'2024-03-26 17:04:20\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-03-26 17:04:20 --> [Caused by] mysqli_sql_exception: Duplicate entry '2403-wbs-21-034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472660_d83ae760df59f0fd8d56.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:20\', \'2024-03-26 17:04:20\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472660_d83ae760df59f0fd8d56.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:20\', \'2024-03-26 17:04:20\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (\'2403-wbs-21-034\', \'Anonymous\', \' \', \'\', \'Perempuan\', \'k                      \', \'k@gamil.com\', \'k\', \'Fraud\', \'k k\', \'k\', \'k\', \'k\', \'k\', \'k                      \', \'k\', \'1711472660_d83ae760df59f0fd8d56.jpeg\', \'Sedang Ditinjau\', \'2024-03-26 17:04:20\', \'2024-03-26 17:04:20\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data` (`id`, `sifat_pelapor`, `firstName`, `noIdentitas`, `jk`, `alamat`, `email`, `phone`, `jenisPelanggaran`, `firstNameTerlapor`, `divisi`, `departemen`, `waktu`, `lokasi`, `kronologi`, `nominalKerugian`, `dokumen`, `status`, `created_at`, `updated_at`) VALUES (:id:, :sifat_pelapor:, :firstName:, :noIdentitas:, :jk:, :alamat:, :email:, :phone:, :jenisPelanggaran:, :firstNameTerlapor:, :divisi:, :departemen:, :waktu:, :lokasi:, :kronologi:, :nominalKerugian:, :dokumen:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 APPPATH\Controllers\LaporController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-26 17:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 17:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-26 17:12:55 --> ParseError: syntax error, unexpected token "if"
+in APPPATH\Controllers\LaporController.php on line 88.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\wbs-ci\\app\\Controllers\\LaporController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LaporController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LaporController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\LaporController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-03-26 17:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 17:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 17:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-26 17:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -522,7 +522,7 @@
   event.preventDefault(); // Mencegah form untuk melakukan submit secara default
 
   const searchValue = searchInput.value.trim(); // Mendapatkan nilai ID yang dimasukkan oleh pengguna
-
+  
   // Lakukan pengecekan apakah ID kosong atau tidak
   if (searchValue === '') {
     alert('Silakan masukkan ID untuk melakukan pencarian.');
@@ -540,13 +540,15 @@
   fetch('/searchData?id=' + searchValue)
     .then(response => response.json())
     .then(data => {
+                console.log(data);
       // Tampilkan pesan dalam modal
       const modalTitle = document.getElementById('searchModalLabel');
       const modalBody = document.getElementById('searchResultText');
+      const status = data.status;
 
       if (data) {
         modalTitle.innerText = 'Informasi Pengaduan';
-        modalBody.innerText = 'Data dengan ID ' + searchValue + ' sedang dalam proses peninjauan. Cek email secara berkala untuk mendapatkan informasi status pengaduan anda.';
+        modalBody.innerText = 'Data dengan ID ' + searchValue + ' ditemukan.  Saat ini proses pengajuan anda sampai pada tahap ' + status + '. Informasi selanjutnya akan diinformasikan melalui email yang anda kirimkan. Terimakasih.';
       } else {
         modalTitle.innerText = 'Error';
         modalBody.innerText = 'Data dengan ID ' + searchValue + ' tidak ditemukan.';
