@@ -129,7 +129,7 @@
                         <!-- Radio Check -->
                         <label class="form-control" for="sp_anonymous">
                           <span class="form-check">
-                            <input type="radio" class="form-check-input" name="sifat_pelapor" id="sp_anonymous" value="Anonymous">
+                            <input type="radio" class="form-check-input" name="sifat_pelapor" id="sp_anonymous" value="Anonymous" onclick="btnAnonymous()">
                             <span class="form-check-label">Anonymous</span>
                           </span>
                         </label>
@@ -138,7 +138,7 @@
                         <!-- Radio Check -->
                         <label class="form-control" for="sp_terbuka">
                           <span class="form-check">
-                            <input type="radio" class="form-check-input" name="sifat_pelapor" id="sp_terbuka" value="Terbuka" checked>
+                            <input type="radio" class="form-check-input" name="sifat_pelapor" id="sp_terbuka" value="Terbuka" onclick="btnTerbuka()">
                             <span class="form-check-label">Terbuka</span>
                           </span>
                         </label>
@@ -146,6 +146,7 @@
                       </div>
                     </div>
                   </div>
+
                   
                   <div class="row mb-4">
                     <label class="col-sm-3 col-form-label form-label">Nama Lengkap <font color="#FF0509">*</font></label>
@@ -610,7 +611,8 @@
         }
       })          
     })()
-
+    </script>
+    <script>
     var radioAnonymous = document.getElementById('sp_anonymous');
     var radioTerbuka = document.getElementById('sp_terbuka');
 
@@ -646,20 +648,23 @@ radioTerbuka.addEventListener('change', function() {
     }
 });
 
-            // Menangani penyesuaian nilai sifat_pelapor dan noIdentitas sebelum mengirimkan data ke server
-    document.querySelector('form').addEventListener('submit', function(event) {
-        // Mendapatkan nilai sifat_pelapor yang dipilih
-        var sifat_pelapor = document.querySelector('input[name="sp_anonymous"]:checked').value;
+function btnAnonymous() {
+    inputFirstName.disabled = true;
+    inputLastName.disabled = true;
+    inputNoIdentitas.disabled = true;
+    inputFirstName.value = ''; // Mengosongkan nilai input
+    inputLastName.value = ''; // Mengosongkan nilai input
+    inputNoIdentitas.value = ''; // Mengosongkan nilai input
+}
 
-        // Mengganti nilai input sifat_pelapor dengan nilai yang dipilih
-        document.querySelector('input[name="sifat_pelapor"]').value = sifat_pelapor;
+function btnTerbuka() {
+    inputFirstName.disabled = false;
+    inputLastName.disabled = false;
+    inputNoIdentitas.disabled = false;
+}
+  </script>
 
-        // Mengatur nilai noIdentitas sesuai dengan keadaan radio button 'sifat_pelapor'
-        if (sifat_pelapor === 'Anonymous') {
-            inputNoIdentitas.value = '';
-        }
-    });
-
+  <script>
     var checkbox = document.getElementById('deleteAccountCheckbox');
     var submitBtn = document.getElementById('submitBtn');
 
@@ -679,6 +684,7 @@ radioTerbuka.addEventListener('change', function() {
     });
     
   </script>
+  
 <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
