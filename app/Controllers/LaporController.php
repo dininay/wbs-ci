@@ -45,21 +45,30 @@ class LaporController extends Controller
         $yearMonth = $year . Time::now()->format('m');
 
         // Mendapatkan bagian WBS sesuai dengan gender dan privacy
-        $wbs = ($gender == 'Laki-laki' ? '1' : '2') . ($privacy == 'Anonymous' ? '1' : '2');
+        $wbs = ($gender == 'Laki-Laki' ? '1' : '2') . ($privacy == 'Anonymous' ? '1' : '2');
 
         // Mendapatkan ID terakhir dari model
         $lastID = $this->laporModels->getMaxID();
-
+        
+        // Jika tidak ada ID sebelumnya, gunakan 001
+        if (!$lastID) {
+            return $yearMonth . '-WBS-' . $wbs . '-001';
+        }
+        
         // Mendapatkan bagian 3 digit terakhir dari ID
         $lastSequence = intval(substr($lastID, -3)); // Ambil tiga angka terakhir dan ubah ke integer
         $nextSequence = $lastSequence + 1;
-
+        
         // Menggabungkan semua bagian untuk mendapatkan ID yang lengkap
-        $newID = $yearMonth . '-wbs-' . $wbs . '-' . str_pad($nextSequence, 3, '0', STR_PAD_LEFT); // Pad dengan nol jika perlu
+        $newID = $yearMonth . '-WBS-' . $wbs . '-' . str_pad($nextSequence, 3, '0', STR_PAD_LEFT); // Pad dengan nol jika perlu
 
+        while ($this->laporModels->isIDExists($newID)) {
+        $nextSequence++; // Tambahkan sequence
+        $newID = $yearMonth . '-WBS-' . $wbs . '-' . str_pad($nextSequence, 3, '0', STR_PAD_LEFT); // Buat ID baru
+        }
+        
         return $newID;
     }
-
 
     public function save()
     {
@@ -69,10 +78,10 @@ class LaporController extends Controller
         $privacy = $this->request->getVar('sifat_pelapor');
         $id = $this->generateID($gender, $privacy);
 
-        $file = [];
+        $fileNames = [];
         if ($this->request->getMethod() == 'post') {
-            $files = $this->request->getFiles();
-            foreach($files['dokumen'] as $dkm){
+            $files = $this->request->getFiles('dokumen');
+            foreach($files as $dkm){
                 if($dkm->isValid() && !$dkm->hasMoved()){
                     $fileName = $dkm->getRandomName();
                     if($dkm->move(WRITEPATH.'uploads')){
@@ -164,7 +173,9 @@ class LaporController extends Controller
 
         // session()->setFlashdata('pesan','Data berhasil direkam');
         // Redirect ke halaman yang ditentukan setelah berhasil menyimpan data
-        return redirect()->to('?success=true');
+        session()->setFlashdata('success_modal', true);
+        session()->setFlashdata('insert_id', $id);
+        return redirect()->to('/');
     }
 
 }

@@ -511,6 +511,33 @@
     echo view("layout/js.php")
   ?>
 
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pengaduan Berhasil Diajukan!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p>Terimakasih sudah memberitahu kami bahwa terdapat tindakan melawan hukum.</p>
+                <p id="ticketCode"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <script>
+      <?php if ($success_modal): ?>
+    const fixId = "<?php echo $insert_id; ?>";
+    $(document).ready(function() {
+        $('#successModal').modal('show');
+        $('#ticketCode').text(`Simpan kode tiket anda (${fixId}), untuk mendapatkan info terkait.`);
+    });
+    <?php endif; ?>
+  </script>
+
 <script>
     // Mendapatkan elemen input, form pencarian, dan elemen div untuk menampilkan hasil pencarian
     const searchInput = document.getElementById('searchInput');

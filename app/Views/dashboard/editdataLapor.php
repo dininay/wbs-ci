@@ -24,7 +24,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Edit Pengaduan</h4>
-                        <form action="<?= site_url('dashboardcontroller/update/'.$data['id'])?>" method="post">
+                        <form action="<?= site_url('DashboardController/update/'.$data['id'])?>" method="post">
                         <div class="form-group">
                             <input type="hidden" name="id" value="<?= $data['id'] ?? '' ?>">
                         </div>

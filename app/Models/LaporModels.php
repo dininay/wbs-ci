@@ -15,10 +15,13 @@ class LaporModels extends Model
 
     public function getMaxID()
     {
-        return $this->selectMax('id')
-                    ->get()
-                    ->getRow()
-                    ->id;
+    return $this->db->table('data')->selectMax('id')->get()->getRowArray()['id'];
+    }
+
+    public function isIDExists($id)
+    {
+        $result = $this->db->table('data')->where('id', $id)->countAllResults();
+        return $result > 0;
     }
 
     public function isDuplicateID($id)

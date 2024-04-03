@@ -58,7 +58,7 @@
                                         <td><?php echo $item['jenisPelanggaran']; ?></td>
                                         <td><?php echo $item['status']; ?></td>
                                         <td>
-                                            <a href="/dashboardcontroller/detail/<?= $item['id']; ?>" class="btn btn-primary btn-sm">Detail</a>
+                                            <a href="/DashboardController/detail/<?= $item['id']; ?>" class="btn btn-primary btn-sm">Detail</a>
                                         </td>
                                     </tr>
                                     <?php endforeach; ?>

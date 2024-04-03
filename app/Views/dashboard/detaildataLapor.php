@@ -119,8 +119,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <a href="javascript:history.back()" class="btn btn-primary">Kembali</a>
-                            <a href="/dashboardcontroller/edit/<?= $data['id']; ?>" class="btn btn-warning">Edit</a>
-                            <form action="/dashboardcontroller/delete/<?= $data['id']; ?>" method="post" class="d-inline">
+                            <a href="/DashboardController/edit/<?= $data['id']; ?>" class="btn btn-warning">Edit</a>
+                            <form action="/DashboardController/delete/<?= $data['id']; ?>" method="post" class="d-inline">
                                 <?= csrf_field(); ?>
                                 <input type="hidden" name="_method" value="Delete">
                                 <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?');">Delete</button>
