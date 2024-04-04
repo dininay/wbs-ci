@@ -107,6 +107,10 @@
                                 <p><?= $data['status'] ?? '' ?></p>
                             </div>
                             <div class="form-group">
+                                <label for="status" class="form-label-bold">Catatan :</label>
+                                <p><?= $data['catatan'] ?? '' ?></p>
+                            </div>
+                            <div class="form-group">
                                 <label for="created_at" class="form-label-bold">Tanggal Dibuat:</label>
                                 <p><?= $data['created_at'] ?? '' ?></p>
                             </div>

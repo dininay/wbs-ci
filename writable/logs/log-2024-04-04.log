@@ -1,0 +1,147 @@
+INFO - 2024-04-04 01:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-04 01:17:26 --> Error: Call to a member function isValid() on array
+in APPPATH\Controllers\LaporController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LaporController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-04-04 01:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-04 01:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-04 01:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-04 01:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-04 01:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-04 01:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-04 01:20:50 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\detaildataLapor.php on line 126.
+ 1 APPPATH\Views\dashboard\detaildataLapor.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\detaildataLapor.php', 126)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\detaildataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/detaildataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(98): view('/dashboard/detaildataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->detail('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:20:54 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:23:12 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:23:31 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:23:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:26:53 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:27:00 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:27:09 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:27:16 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:27:36 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-04-04 01:27:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\editdataLapor.php on line 27.
+ 1 APPPATH\Views\dashboard\editdataLapor.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\wbs-ci\\app\\Views\\dashboard\\editdataLapor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/dashboard/editdataLapor', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(62): view('/dashboard/editdataLapor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->edit('assets', 'img', 'logo.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+INFO - 2024-04-04 01:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

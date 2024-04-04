@@ -37,6 +37,10 @@
                                 <option value="Laporan selesai" <?= (isset($data['status']) && $data['status'] == 'Laporan selesai') ? 'selected' : '' ?>>Laporan selesai</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                          <label for="catatan">Catatan :</label>
+                          <textarea class="w-100" name="catatan" id="catatan" cols="30" rows="10"><?= $data['catatan'] ?? '' ?></textarea>
+                        </div>
                             <button type="submit" class="btn btn-primary">Perbarui Status</button>
                         </form>
 

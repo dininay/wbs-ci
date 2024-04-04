@@ -80,8 +80,8 @@ class LaporController extends Controller
 
         $fileNames = [];
         if ($this->request->getMethod() == 'post') {
-            $files = $this->request->getFiles('dokumen');
-            foreach($files as $dkm){
+            $files = $this->request->getFiles();
+            foreach($files['dokumen'] as $dkm){
                 if($dkm->isValid() && !$dkm->hasMoved()){
                     $fileName = $dkm->getRandomName();
                     if($dkm->move(WRITEPATH.'uploads')){
@@ -115,6 +115,7 @@ class LaporController extends Controller
             'nominalKerugian' => $this->request->getVar('nominalKerugian'),
             'dokumen' => $dokumenString,
             'status' => 'Sedang Ditinjau',
+            'catatan' => '',
             'created_at' => date('Y-m-d H:i:s'), // Tambahkan timestamp created_at
             'updated_at' => date('Y-m-d H:i:s') // Tambahkan timestamp updated_at
         ];
@@ -175,7 +176,7 @@ class LaporController extends Controller
         // Redirect ke halaman yang ditentukan setelah berhasil menyimpan data
         session()->setFlashdata('success_modal', true);
         session()->setFlashdata('insert_id', $id);
-        return redirect()->to('/');
+        return redirect()->to('');
     }
 
 }

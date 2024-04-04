@@ -11,7 +11,7 @@ class LaporModels extends Model
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 
-    protected $allowedFields = ['id','sifat_pelapor', 'firstName', 'lastName', 'noIdentitas', 'jk', 'alamat', 'email', 'phone', 'jenisPelanggaran', 'firstNameTerlapor', 'lastNameTerlapor', 'divisi', 'departemen', 'waktu', 'lokasi', 'kronologi', 'nominalKerugian', 'dokumen','status','created_at','updated_at'];
+    protected $allowedFields = ['id','sifat_pelapor', 'firstName', 'lastName', 'noIdentitas', 'jk', 'alamat', 'email', 'phone', 'jenisPelanggaran', 'firstNameTerlapor', 'lastNameTerlapor', 'divisi', 'departemen', 'waktu', 'lokasi', 'kronologi', 'nominalKerugian', 'dokumen', 'status', 'catatan', 'created_at','updated_at'];
 
     public function getMaxID()
     {

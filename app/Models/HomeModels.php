@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class HomeModels extends Model
 {
-    protected table
+    protected $table = 'data';
     public function getByid($id)
     {
         return $this->db->get_where('data',["id"=> $id])->row();

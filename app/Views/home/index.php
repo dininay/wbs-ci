@@ -528,15 +528,15 @@
         </div>
     </div>
 </div>
-  <script>
-      <?php if ($success_modal): ?>
-    const fixId = "<?php echo $insert_id; ?>";
-    $(document).ready(function() {
-        $('#successModal').modal('show');
-        $('#ticketCode').text(`Simpan kode tiket anda (${fixId}), untuk mendapatkan info terkait.`);
-    });
+<script>
+    <?php if (session()->getFlashdata('success_modal')): ?>
+        const fixId = "<?php echo session()->getFlashdata('insert_id'); ?>";
+        $(document).ready(function() {
+            $('#successModal').modal('show');
+            $('#ticketCode').text(`Simpan kode tiket anda (${fixId}), untuk mendapatkan info terkait.`);
+        });
     <?php endif; ?>
-  </script>
+</script>
 
 <script>
     // Mendapatkan elemen input, form pencarian, dan elemen div untuk menampilkan hasil pencarian
@@ -594,15 +594,5 @@
 });
 </script>
 
-<script>
-    // Ambil parameter success dari URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const success = urlParams.get('success');
-
-    // Jika parameter success bernilai true, tampilkan popup
-    if (success === 'true') {
-        $('#successModal').modal('show'); // Tampilkan modal
-    }
-</script>
 </body>
 </html>
