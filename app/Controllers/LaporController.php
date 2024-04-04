@@ -80,9 +80,7 @@ class LaporController extends Controller
 
         $fileNames = [];
         if ($this->request->getMethod() == 'post') {
-            $files = $this->request->getFiles();
-            //ketika ['dokumen] dibawah ini, di lokal bisa masuk data nama gambar yg diinputkan, tapi di hosting error undefined array dokumen
-            //ketika di hosting tak taruh di getFiles('dokumen'), errornya gaada tapi data nama gambarnya juga ga masuk ke database
+            $files = $this->request->getFileMultiple('dokumen');
             foreach($files['dokumen'] as $dkm){
                 if($dkm->isValid() && !$dkm->hasMoved()){
                     $fileName = $dkm->getRandomName();

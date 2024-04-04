@@ -4,6 +4,8 @@
 <?php
     echo view("dashboard/layout/head.php")
   ?>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 
 <body>
   <div class="container-scroller">
@@ -18,7 +20,9 @@
       echo view("dashboard/layout/sidebar.php")
       ?>
       <!-- partial -->
-      
+      <canvas id="myChart" width="400" height="400"></canvas>
+
+    
 
     </div>
   </div>

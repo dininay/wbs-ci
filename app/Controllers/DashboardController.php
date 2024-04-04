@@ -25,6 +25,24 @@ class DashboardController extends BaseController
         return view('dashboard/index', $data);
     }
 
+    // public function dashboard()
+    // {
+    //     // Panggil model untuk mendapatkan data
+    //     $data = $this->getDataForChart();
+
+    //     // Kirim data ke view
+    //     return view('dashboard/index', ['chartData' => $data]);
+    // }
+
+    // private function getDataForChart()
+    // {
+    //     // Panggil model untuk mengambil data
+    //     $model = new DashboardModels(); // Sesuaikan dengan nama model Anda
+    //     $data = $model->getDataForChart();
+
+    //     return $data;
+    // }
+
     public function dataLapor()
     {
         $currentPage = $this->request->getVar('dataLapor') ? $this->request->getVar('dataLapor') : 1;
