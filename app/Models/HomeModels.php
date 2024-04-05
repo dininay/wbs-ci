@@ -10,5 +10,10 @@ class HomeModels extends Model
     {
         return $this->db->get_where('data',["id"=> $id])->row();
     }
+
+    public function getDataByid($id)
+    {
+        return $this->where('id',$id)->first();
+    }
 }
 ?>

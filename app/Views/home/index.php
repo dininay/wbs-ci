@@ -240,35 +240,42 @@
           </div>
           <!-- End Heading -->
 
-          <form id="searchForm">
+          <form id="searchForm" action="/HomeController/searchById" method="post">
             <!-- Input Card -->
             <div class="input-card input-card-sm border mb-3">
-              <div class="input-card-form">
-                <label for="searchInput" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
-                <input type="text" class="form-control form-control-lg" id="searchInput" placeholder="0000-wbs-00-000" aria-label="Masukan Nomor Pengaduan">
-              </div>
-              <button type="submit" class="btn btn-primary btn-lg">Kirim</button>
+                <div class="input-card-form">
+                    <label for="id" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
+                    <input type="text" class="form-control form-control-lg" id="id" name="id" placeholder="0000-wbs-00-000" aria-label="Masukan Nomor Pengaduan">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Cari</button>
             </div>
             <!-- End Input Card -->
-          </form>
-          
+          </form> 
+
+          <!-- Modal -->
           <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="searchModalLabel">Informasi Pengaduan</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p id="searchResultText"></p>
-                </div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchModalLabel">Informasi Pengaduan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center" id="searchModalContent">
+                      <p id="searchResult"></p>
+                      <p id="statusMessage"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                  </div>
               </div>
-            </div>
           </div>
+          <!-- End Modal -->
+
     </div>
 </div>
 
-<div class="container">
+    <div class="container">
       <div class="w-lg-75 mx-lg-auto">
         <div class="card card-sm overflow-hidden">
           <!-- Card -->
@@ -511,88 +518,82 @@
     echo view("layout/js.php")
   ?>
 
-<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Pengaduan Berhasil Diajukan!</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <p>Terimakasih sudah memberitahu kami bahwa terdapat tindakan melawan hukum.</p>
-                <p id="ticketCode"></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-    <?php if (session()->getFlashdata('success_modal')): ?>
-        const fixId = "<?php echo session()->getFlashdata('insert_id'); ?>";
-        $(document).ready(function() {
-            $('#successModal').modal('show');
-            $('#ticketCode').text(`Simpan kode tiket anda (${fixId}), untuk mendapatkan info terkait.`);
-        });
-    <?php endif; ?>
-</script>
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Pengaduan Berhasil Diajukan!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                  <p>Terimakasih sudah memberitahu kami bahwa terdapat tindakan melawan hukum.</p>
+                  <p id="ticketCode"></p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
-<script>
-    // Mendapatkan elemen input, form pencarian, dan elemen div untuk menampilkan hasil pencarian
-    const searchInput = document.getElementById('searchInput');
-  const searchForm = document.getElementById('searchForm');
-  const searchResultDiv = document.getElementById('searchResult');
-
-  // Menambahkan event listener untuk event "submit" form pencarian
-  searchForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Mencegah form untuk melakukan submit secara default
-
-  const searchValue = searchInput.value.trim(); // Mendapatkan nilai ID yang dimasukkan oleh pengguna
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   
-  // Lakukan pengecekan apakah ID kosong atau tidak
-  if (searchValue === '') {
-    alert('Silakan masukkan ID untuk melakukan pencarian.');
-    return; // Hentikan eksekusi jika ID kosong
-  }
+  <script>
+      <?php if (session()->getFlashdata('success_modal')): ?>
+          const fixId = "<?php echo session()->getFlashdata('insert_id'); ?>";
+          $(document).ready(function() {
+              $('#successModal').modal('show');
+              $('#ticketCode').text(`Simpan kode tiket anda (${fixId}), untuk mendapatkan info terkait.`);
+          });
+      <?php endif; ?>
+  </script>
+  
+   <script>
+   document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
 
-  // Lakukan pengecekan apakah ID valid
-  const idRegex = /^\d{4}-wbs-\d{2}-\d{3}$/;
-  if (!idRegex.test(searchValue)) {
-    alert('Format ID tidak valid. Format yang diizinkan: XXXX-wbs-XX-XXX');
-    return; // Hentikan eksekusi jika ID tidak valid
-  }
+    var id = document.getElementById('id').value;
 
-  // Kirim permintaan AJAX ke backend untuk melakukan pencarian data berdasarkan ID
-  fetch('/searchData?id=' + searchValue)
+    if (id === '') {
+        alert('Silakan masukkan ID untuk melakukan pencarian.');
+        return;
+    }
+
+    const idRegex = /^\d{4}-WBS-\d{2}-\d{3}$/;
+    if (!idRegex.test(id)) {
+        alert('Format ID tidak valid. Format yang diizinkan: XXXX-WBS-XX-XXX');
+        return;
+    }
+
+    fetch('/HomeController/searchById', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ id: id })
+    })
     .then(response => response.json())
     .then(data => {
-                console.log(data);
-      // Tampilkan pesan dalam modal
-      const modalTitle = document.getElementById('searchModalLabel');
-      const modalBody = document.getElementById('searchResultText');
-      const status = data.status;
+        const modalTitle = document.getElementById('searchModalLabel');
+        const modalBody = document.getElementById('searchResult');
+        const statusMessage = document.getElementById('statusMessage');
 
-      if (data) {
-        modalTitle.innerText = 'Informasi Pengaduan';
-        modalBody.innerText = 'Data dengan ID ' + searchValue + ' ditemukan.  Saat ini proses pengajuan anda sampai pada tahap ' + status + '. Informasi selanjutnya akan diinformasikan melalui email yang anda kirimkan. Terimakasih.';
-      } else {
-        modalTitle.innerText = 'Error';
-        modalBody.innerText = 'Data dengan ID ' + searchValue + ' tidak ditemukan.';
-      }
+        if (data.id && data.status) {
+        modalBody.innerText = data.id;
+        statusMessage.innerText = 'Data dengan ID ' + data.id + ' ditemukan. Saat ini proses pengajuan anda sampai pada tahap ' + data.status + '. Silahkan cek secara berkala untuk mendapatkan informasi terbaru atas pengaduan anda.';
+    } else {
+        modalBody.innerText = ''; // Hapus konten modalBody jika data tidak ditemukan
+        statusMessage.innerText = 'Data dengan ID ' + id + ' tidak ditemukan.';
+    }
 
-      // Tampilkan modal
-      const searchModal = new bootstrap.Modal(document.getElementById('searchModal'));
-      searchModal.show();
+    var myModal = new bootstrap.Modal(document.getElementById('searchModal'));
+    myModal.show();
     })
     .catch(error => {
-      console.error('Terjadi kesalahan:', error);
+        console.error('Error:', error);
     });
-
-  // Kosongkan nilai input pencarian setelah pencarian selesai
-  searchInput.value = '';
 });
-</script>
+  </script>
 
 </body>
 </html>
