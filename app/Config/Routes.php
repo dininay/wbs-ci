@@ -31,6 +31,8 @@ $routes->setDefaultMethod('index');
     $routes->get('/dashboard/edit/(:num)', 'DashboardController::editdataLapor/$1');
     $routes->post('/dashboard/update/(:num)', 'DashboardController::update/$1');
     $routes->post('/dashboard/detail/(:num)', 'DashboardController::detail/$1');
+    $routes->delete('/dashboard/dataLapor/(:num)', 'DashboardController::delete/$1');
+
 
     // $routes->group('dashboard', ['middleware' => 'auth'], function ($routes) {
     //     $routes->get('/', 'DashboardController::index');
