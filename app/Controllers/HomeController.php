@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-use App\Models\HomeModels; 
+use App\Models\HomeModels;
 
 class HomeController extends BaseController
 {
-    protected $homeModels; 
+    protected $homeModels;
 
     public function index()
     {
@@ -38,25 +38,27 @@ class HomeController extends BaseController
     public function searchById()
     {
         // Retrieve the ID from the request
-        $id = $this->request->getPOST('id');
+        $id = $this->request->getVar('id');
 
         // Load the model
         $model = new HomeModels(); // Replace YourModel with your actual model name
 
         // Query the database to find the record by ID
-        $result = $model->find($id);
+        $result = $model->getDataByid($id);
 
-        // Check if a record is found
-        if ($result) {
-            // Set $status variable with the status of the record
-            $status = $result['status'];
-        } else {
-            // Set $status variable with an error message
-            $status = 'ID not found';
-        }
 
-        // Pass $status variable to the view
-        return $this->response->setJSON(['id' => $id, 'status' => $status]);
+
+        $status = $result ?  $result['status'] : 'ID not found';
+
+        $response = [
+            'data' => [
+                'id' => $id,
+                'status' => $status
+            ]
+        ];
+
+        $this->response->setJSON($response);
+
+        return $this->response;
     }
-
 }
