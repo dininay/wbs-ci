@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-use App\Models\HomeModels; 
+use App\Models\HomeModels;
 
 class HomeController extends BaseController
 {
-    protected $homeModels; 
+    protected $homeModels;
 
     public function index()
     {
@@ -49,32 +49,29 @@ class HomeController extends BaseController
         $pattern = '/^\d{4}-wbs-\d{2}-\d{3}$/i';
 
         if (preg_match($pattern, $id)) {
-            $response = [
-                'data' => [
-                    'id' => $id,
-                    'status' => $result ? $result['status'] : 'ID not found'
-                ]
-            ];
+            if ($result) {
+                $response = [
+                    'data' => [
+                        'id' => $id,
+                        'status' => $result['status']
+                    ]
+                ];
+            } else {
+                $response = [
+                    'message' => 402,
+                    'result' => 'ID not found',
+                ];
+            }
         } else {
             $response = [
                 'message' => 404,
                 'result' => 'Format ID is not valid.',
 
-            ]; 
-<<<<<<< HEAD
-        } else if{
-            $response = [
-                'message' => 404,
-                'result' => 'Format ID is not valid.',
-
-            ]; 
-=======
->>>>>>> e633f74e6b379e412211559bbfc7802c16d1c6eb
+            ];
         }
 
         $this->response->setJSON($response);
 
         return $this->response;
     }
-
 }
