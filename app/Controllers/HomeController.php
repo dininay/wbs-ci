@@ -46,15 +46,28 @@ class HomeController extends BaseController
         // Query the database to find the record by ID
         $result = $model->getDataByid($id);
 
-        // Check if a record is found
-        $status = $result ?  $result['status'] : 'ID not found';
+        $pattern = '/^\d{4}-wbs-\d{2}-\d{3}$/i';
 
-        $response = [
-            'data' => [
-                'id' => $id,
-                'status' => $status
-            ]
-        ];
+        if (preg_match($pattern, $id)) {
+            $response = [
+                'data' => [
+                    'id' => $id,
+                    'status' => $result ? $result['status'] : 'ID not found'
+                ]
+            ];
+        } else {
+            $response = [
+                'message' => 404,
+                'result' => 'Format ID is not valid.',
+
+            ]; 
+        } else if{
+            $response = [
+                'message' => 404,
+                'result' => 'Format ID is not valid.',
+
+            ]; 
+        }
 
         $this->response->setJSON($response);
 
