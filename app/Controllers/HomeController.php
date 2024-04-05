@@ -38,7 +38,7 @@ class HomeController extends BaseController
     public function searchById()
     {
         // Retrieve the ID from the request
-        $id = $this->request->getPOST('id');
+        $id = $this->request->getGet('id');
 
         // Load the model
         $model = new HomeModels(); // Replace YourModel with your actual model name
@@ -56,7 +56,7 @@ class HomeController extends BaseController
         }
 
         // Pass $status variable to the view
-        return $this->response->setJSON(['id' => $id, 'status' => $status]);
+        echo json_encode(['status' => $status]);
     }
 
 }
