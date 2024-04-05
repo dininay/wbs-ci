@@ -38,25 +38,27 @@ class HomeController extends BaseController
     public function searchById()
     {
         // Retrieve the ID from the request
-        $id = $this->request->getGet('id');
+        $id = $this->request->getVar('id');
 
         // Load the model
         $model = new HomeModels(); // Replace YourModel with your actual model name
 
         // Query the database to find the record by ID
-        $result = $model->find($id);
+        $result = $model->getDataByid($id);
 
         // Check if a record is found
-        if ($result) {
-            // Set $status variable with the status of the record
-            $status = $result['status'];
-        } else {
-            // Set $status variable with an error message
-            $status = 'ID not found';
-        }
+        $status = $result ?  $result['status'] : 'ID not found';
 
-        // Pass $status variable to the view
-        echo json_encode(['status' => $status]);
+        $response = [
+            'data' => [
+                'id' => $id,
+                'status' => $status
+            ]
+        ];
+
+        $this->response->setJSON($response);
+
+        return $this->response;
     }
 
 }

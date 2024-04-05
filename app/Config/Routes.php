@@ -17,6 +17,7 @@ $routes->setDefaultMethod('index');
     $routes->get('/lapor', 'LaporController::index');
     $routes->POST('/save', 'LaporController::save');
     $routes->get('/HomeController/searchById', 'HomeController::searchById');
+    $routes->post('/HomeController/searchById', 'HomeController::searchById');
 
     $routes->get('/login', 'AuthController::login');
     $routes->post('login', 'AuthController::attemptLogin');

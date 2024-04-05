@@ -240,12 +240,12 @@
           </div>
           <!-- End Heading -->
 
-          <form id="searchForm" action="/HomeController/searchById" method="get">
+          <form id="searchForm" action="/HomeController/searchById" method="post">
             <!-- Input Card -->
             <div class="input-card input-card-sm border mb-3">
                 <div class="input-card-form">
                     <label for="id" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
-                    <input type="text" class="form-control form-control-lg" id="id" name="id" placeholder="0000-wbs-00-000" aria-label="Masukan Nomor Pengaduan">
+                    <input type="text" class="form-control form-control-lg" id="id" name="id" placeholder="0000-WBS-00-000" aria-label="Masukan Nomor Pengaduan">
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg">Cari</button>
             </div>
@@ -261,8 +261,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center" id="searchModalContent">
-                      <p>Data Anda Berhasil Ditemukan. Data dengan id <p id="ticketCode"></p> saat ini sedang dalam tahap</p>
-                      <p id="statusMessage"></p>
+                    <p id="searchResult"></p>  
+                    <p id="statusMessage"></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -546,28 +546,54 @@
           });
       <?php endif; ?>
   </script>
+  
   <script>
-   <script>
-      // Event listener for form submission
-      document.getElementById('searchForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
 
-        // Get the input value
-        var id = document.getElementById('id').value;
+    var id = document.getElementById('id').value;
+      console.log(typeof id)
+      if (id === '') {
+        alert('Silakan masukkan ID untuk melakukan pencarian.');
+        return;
+      }
 
-        // Send AJAX request to searchById endpoint
-        fetch('/HomeController/searchById?id=' + id)
-            .then(response => response.json())
-            .then(data => {
-                // Update modal content with response data
-                document.getElementById('statusMessage').innerText = "Data Anda Berhasil Ditemukan. Saat ini proses pengaduan anda dengan ID" 
-                + data.id + "telah sampai pada tahap " + data.status + "Silahkan cek secara berkala untuk mendapatkan informasi terbaru atas pengaduan anda";
-                $('#searchModal').modal('show');
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+    const idRegex = /^\d{4}-WBS-\d{2}-\d{3}$/;
+    if (!idRegex.test(id)) {
+        alert('Format ID tidak valid. Format yang diizinkan: XXXX-WBS-XX-XXX');
+        return;
+    }
+
+    fetch('/HomeController/searchById', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ id: id })
+    })
+    .then(response => response.json())
+    .then(data => {
+          const modalTitle = document.getElementById('searchModalLabel');
+          const modalBody = document.getElementById('searchResult');
+          const statusMessage = document.getElementById('statusMessage');
+          const data = item?.data;
+
+          if (data?.id && data?.status) {
+            modalBody.innerText = data.id;
+            statusMessage.innerText = 'Data dengan ID ' + data.id + ' ditemukan. Saat ini proses pengajuan anda sampai pada tahap ' + data.status + '. Silahkan cek secara berkala untuk mendapatkan informasi terbaru atas pengaduan anda.';
+          } else {
+            modalBody.innerText = '';
+            statusMessage.innerText = 'Data dengan ID ' + id + ' tidak ditemukan.';
+          }
+
+        var myModal = new bootstrap.Modal(document.getElementById('searchModal'));
+        myModal.show();
+    })
+    .catch(error => {
+        console.error('Error:', error);
     });
+});
+
   </script>
 
 </body>

@@ -13,7 +13,7 @@ class HomeModels extends Model
 
     public function getDataByid($id)
     {
-        return $this->where('id',$id)->first();
+        return $this->where('id', $id)->first();
     }
 }
 ?>
