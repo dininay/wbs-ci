@@ -247,14 +247,10 @@ echo view("layout//head.php")
                 <label for="id" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
                 <input type="text" class="form-control form-control-lg" id="id" name="id" placeholder="0000-wbs-00-000" aria-label="Masukan Nomor Pengaduan">
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Cari</button>
+              <button type="submit" class="btn btn-primary btn-lg" id="searchButton" disabled>Cari</button>
             </div>
             <!-- End Input Card -->
           </form>
-
-
-
-
           <!-- Modal -->
           <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -557,11 +553,7 @@ echo view("layout//head.php")
       event.preventDefault();
 
       var id = document.getElementById('id').value;
-      console.log(typeof id)
-      if (id === '') {
-        alert('Silakan masukkan ID untuk melakukan pencarian.');
-        return;
-      }
+    
       fetch('/HomeController/searchById', {
           method: 'POST',
           headers: {
@@ -592,6 +584,20 @@ echo view("layout//head.php")
         .catch(error => {
           console.error('Error:', error);
         });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      const idInput = document.getElementById('id');
+      const searchButton = document.getElementById('searchButton');
+
+      function toggleSearchButton() {
+        if (idInput.value.trim() !== '') {
+          searchButton.disabled = false;
+        } else {
+          searchButton.disabled = true;
+        }
+      }
+      idInput.addEventListener('input', toggleSearchButton);
+      toggleSearchButton();
     });
   </script>
 

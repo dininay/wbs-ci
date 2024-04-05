@@ -38,7 +38,7 @@ class HomeController extends BaseController
     public function searchById()
     {
         // Retrieve the ID from the request
-        $id = strtoupper($this->request->getVar('id'));
+        $id = $this->request->getVar('id');
 
         // Load the model
         $model = new HomeModels(); // Replace YourModel with your actual model name
