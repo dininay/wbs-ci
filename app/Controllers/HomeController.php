@@ -38,7 +38,7 @@ class HomeController extends BaseController
     public function searchById()
     {
         // Retrieve the ID from the request
-        $id = $this->request->getVar('id');
+        $id = strtoupper($this->request->getVar('id'));
 
         // Load the model
         $model = new HomeModels(); // Replace YourModel with your actual model name
@@ -46,16 +46,22 @@ class HomeController extends BaseController
         // Query the database to find the record by ID
         $result = $model->getDataByid($id);
 
+        $pattern = '/^\d{4}-wbs-\d{2}-\d{3}$/i';
 
+        if (preg_match($pattern, $id)) {
+            $response = [
+                'data' => [
+                    'id' => $id,
+                    'status' => $result ? $result['status'] : 'ID not found'
+                ]
+            ];
+        } else {
+            $response = [
+                'message' => 404,
+                'result' => 'Format ID is not valid.',
 
-        $status = $result ?  $result['status'] : 'ID not found';
-
-        $response = [
-            'data' => [
-                'id' => $id,
-                'status' => $status
-            ]
-        ];
+            ]; 
+        }
 
         $this->response->setJSON($response);
 

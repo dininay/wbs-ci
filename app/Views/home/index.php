@@ -562,14 +562,6 @@ echo view("layout//head.php")
         alert('Silakan masukkan ID untuk melakukan pencarian.');
         return;
       }
-
-      // const idRegex = /^\d{4}-WBS-\d{2}-\d{3}$/;
-
-      // if (!idRegex.test(id)) {
-      //   alert('Format ID tidak valid. Format yang diizinkan: XXXX-WBS-XX-XXX');
-      //   return;
-      // }
-
       fetch('/HomeController/searchById', {
           method: 'POST',
           headers: {
@@ -591,7 +583,7 @@ echo view("layout//head.php")
             statusMessage.innerText = 'Data dengan ID ' + data.id + ' ditemukan. Saat ini proses pengajuan anda sampai pada tahap ' + data.status + '. Silahkan cek secara berkala untuk mendapatkan informasi terbaru atas pengaduan anda.';
           } else {
             modalBody.innerText = '';
-            statusMessage.innerText = 'Data dengan ID ' + id + ' tidak ditemukan.';
+            statusMessage.innerText = item?.message === 404 ? item?.result : 'Data dengan ID ' + id + ' tidak ditemukan.';
           }
 
           var myModal = new bootstrap.Modal(document.getElementById('searchModal'));
