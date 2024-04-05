@@ -61,12 +61,15 @@ class HomeController extends BaseController
                 'result' => 'Format ID is not valid.',
 
             ]; 
+<<<<<<< HEAD
         } else if{
             $response = [
                 'message' => 404,
                 'result' => 'Format ID is not valid.',
 
             ]; 
+=======
+>>>>>>> e633f74e6b379e412211559bbfc7802c16d1c6eb
         }
 
         $this->response->setJSON($response);

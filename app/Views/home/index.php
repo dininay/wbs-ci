@@ -243,14 +243,17 @@
           <form id="searchForm" action="/HomeController/searchById" method="post">
             <!-- Input Card -->
             <div class="input-card input-card-sm border mb-3">
-                <div class="input-card-form">
-                    <label for="id" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
-                    <input type="text" class="form-control form-control-lg" id="id" name="id" placeholder="0000-WBS-00-000" aria-label="Masukan Nomor Pengaduan">
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg" id="searchButton" disabled>Cari</button>
+              <div class="input-card-form">
+                <label for="id" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
+                <input type="text" class="form-control form-control-lg" id="id" name="id" placeholder="0000-wbs-00-000" aria-label="Masukan Nomor Pengaduan">
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">Cari</button>
             </div>
             <!-- End Input Card -->
-          </form> 
+          </form>
+
+
+
 
           <!-- Modal -->
           <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
@@ -551,11 +554,23 @@
     document.getElementById('searchForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
 
-    var id = document.getElementById('id').value;
+      var id = document.getElementById('id').value;
+      console.log(typeof id)
+      if (id === '') {
+        alert('Silakan masukkan ID untuk melakukan pencarian.');
+        return;
+      }
 
-    fetch('/HomeController/searchById', {
-        method: 'POST',
-        headers: {
+      // const idRegex = /^\d{4}-WBS-\d{2}-\d{3}$/;
+
+      // if (!idRegex.test(id)) {
+      //   alert('Format ID tidak valid. Format yang diizinkan: XXXX-WBS-XX-XXX');
+      //   return;
+      // }
+
+      fetch('/HomeController/searchById', {
+          method: 'POST',
+          headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
@@ -585,6 +600,20 @@
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
+      const idInput = document.getElementById('id');
+      const searchButton = document.getElementById('searchButton');
+
+      function toggleSearchButton() {
+        if (idInput.value.trim() !== '') {
+          searchButton.disabled = false;
+        } else {
+          searchButton.disabled = true;
+        }
+      }
+      idInput.addEventListener('input', toggleSearchButton);
+      toggleSearchButton();
+    });
+    document.addEventListener('DOMContentLoaded', function() {
       const idInput = document.getElementById('id');
       const searchButton = document.getElementById('searchButton');
 
