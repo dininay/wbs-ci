@@ -247,7 +247,7 @@
                 <label for="id" class="form-label visually-hidden">Masukan Nomor Pengaduan</label>
                 <input type="text" class="form-control form-control-lg" id="id" name="id" placeholder="0000-wbs-00-000" aria-label="Masukan Nomor Pengaduan">
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Cari</button>
+              <button type="submit" class="btn btn-primary btn-lg" id="searchButton" disabled>Cari</button>
             </div>
             <!-- End Input Card -->
           </form>
@@ -555,18 +555,6 @@
     event.preventDefault(); // Prevent form submission
 
       var id = document.getElementById('id').value;
-      console.log(typeof id)
-      if (id === '') {
-        alert('Silakan masukkan ID untuk melakukan pencarian.');
-        return;
-      }
-
-      // const idRegex = /^\d{4}-WBS-\d{2}-\d{3}$/;
-
-      // if (!idRegex.test(id)) {
-      //   alert('Format ID tidak valid. Format yang diizinkan: XXXX-WBS-XX-XXX');
-      //   return;
-      // }
 
       fetch('/HomeController/searchById', {
           method: 'POST',
@@ -583,13 +571,17 @@
           const modalBody = document.getElementById('searchResult');
           const statusMessage = document.getElementById('statusMessage');
           const data = item?.data;
-
-          if (data?.id && data?.status) {
-            modalBody.innerText = data.id;
-            statusMessage.innerText = 'Data dengan ID ' + data.id + ' ditemukan. Saat ini proses pengajuan anda sampai pada tahap ' + data.status + '. Silahkan cek secara berkala untuk mendapatkan informasi terbaru atas pengaduan anda.';
-          } else {
+          if (item?.message === 402) {
             modalBody.innerText = '';
-            statusMessage.innerText = item?.message === 404 ? item?.result : 'Data dengan ID ' + id + ' tidak ditemukan.';
+            statusMessage.innerText = 'Data dengan ID ' + id + ' tidak ditemukan.';
+          } else {
+            if (data?.id && data?.status) {
+              modalBody.innerText = data.id;
+              statusMessage.innerText = 'Data dengan ID ' + data.id + ' ditemukan. Saat ini proses pengajuan anda sampai pada tahap ' + data.status + '. Silahkan cek secara berkala untuk mendapatkan informasi terbaru atas pengaduan anda.';
+            } else {
+              modalBody.innerText = '';
+              statusMessage.innerText = item?.result;
+            }
           }
 
         var myModal = new bootstrap.Modal(document.getElementById('searchModal'));
