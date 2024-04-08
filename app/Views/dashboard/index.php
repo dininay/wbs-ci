@@ -34,6 +34,17 @@
                 <canvas class="col-lg-4" id="reportTypeChart" width="5" height="5"></canvas>
               </div>
             </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <canvas id="dailyChart" width="5" height="5"></canvas>
+                </div>
+                <div class="col-lg-4">
+                    <canvas id="monthlyChart" width="5" height="5"></canvas>
+                </div>
+                <div class="col-lg-4">
+                  <canvas id="yearlyChart" width="5" height="5"></canvas>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -48,6 +59,9 @@
             var totalData = <?= json_encode($total) ?>;
             var genderData = <?= json_encode($genderData) ?>;
             var reportTypeData = <?= json_encode($reportTypeData) ?>;
+            var dataPerDay = <?= json_encode($dataPerDay) ?>;
+            var dataPerMonth = <?= json_encode($dataPerMonth) ?>;
+            var dataPerYear = <?= json_encode($dataPerYear) ?>;
 
             // Total Reports Chart
             var totalChartCtx = document.getElementById('totalChart').getContext('2d');
@@ -99,6 +113,81 @@
                     datasets: [{
                         label: 'Report Type',
                         data: reportTypeData.map(item => item.total),
+                        backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)'],
+                        borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+
+            // Daily Chart
+            var dailyChartCtx = document.getElementById('dailyChart').getContext('2d');
+            var dailyChart = new Chart(dailyChartCtx, {
+                type: 'bar',
+                data: {
+                    labels: dataPerDay.map(item => item.date),
+                    datasets: [{
+                        label: 'Reports per Day',
+                        data: dataPerDay.map(item => item.total),
+                        backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)'],
+                        borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+
+            // Monthly Chart
+            var monthlyChartCtx = document.getElementById('monthlyChart').getContext('2d');
+            var monthlyChart = new Chart(monthlyChartCtx, {
+                type: 'bar',
+                data: {
+                    labels: dataPerMonth.map(item => item.date),
+                    datasets: [{
+                        label: 'Reports per Month',
+                        data: dataPerMonth.map(item => item.total),
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+
+            // Yearly Chart
+            var yearlyChartCtx = document.getElementById('yearlyChart').getContext('2d');
+            var yearlyChart = new Chart(yearlyChartCtx, {
+                type: 'bar',
+                data: {
+                    labels: dataPerYear.map(item => item.date),
+                    datasets: [{
+                        label: 'Reports per Year',
+                        data: dataPerYear.map(item => item.total),
                         backgroundColor: 'rgba(255, 99, 132, 0.2)',
                         borderColor: 'rgba(255, 99, 132, 1)',
                         borderWidth: 1

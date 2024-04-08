@@ -24,11 +24,17 @@ class DashboardController extends BaseController
         $total = $this->getTotalReports($model);
         $genderData = $this->getGenderData($model);
         $reportTypeData = $this->getReportTypeData($model);
+        $dataPerDay = $this->getDataPerDay($model);
+        $dataPerMonth = $this->getDataPerMonth($model);
+        $dataPerYear = $this->getDataPerYear($model);
 
         return view('/dashboard/index', [
             'total' => $total,
             'genderData' => $genderData,
-            'reportTypeData' => $reportTypeData
+            'reportTypeData' => $reportTypeData,
+            'dataPerDay' => $dataPerDay,
+            'dataPerMonth' => $dataPerMonth,
+            'dataPerYear' => $dataPerYear
         ]);
     }
 
@@ -45,6 +51,27 @@ class DashboardController extends BaseController
     protected function getReportTypeData($model)
     {
         return $model->select('sifat_pelapor, COUNT(*) as total')->groupBy('sifat_pelapor')->findAll();
+    }
+
+    protected function getDataPerDay($model)
+    {
+        return $model->select("DATE_FORMAT(created_at, '%Y-%m-%d') AS date, COUNT(*) AS total")
+                    ->groupBy("DATE_FORMAT(created_at, '%Y-%m-%d')")
+                    ->findAll();
+    }
+
+    protected function getDataPerMonth($model)
+    {
+        return $model->select("DATE_FORMAT(created_at, '%Y-%m') AS date, COUNT(*) AS total")
+                    ->groupBy("DATE_FORMAT(created_at, '%Y-%m')")
+                    ->findAll();
+    }
+
+    protected function getDataPerYear($model)
+    {
+        return $model->select("DATE_FORMAT(created_at, '%Y') AS date, COUNT(*) AS total")
+                    ->groupBy("DATE_FORMAT(created_at, '%Y')")
+                    ->findAll();
     }
 
     public function dataLapor()
