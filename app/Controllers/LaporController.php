@@ -80,7 +80,7 @@ class LaporController extends Controller
 
         $fileNames = [];
         if ($this->request->getMethod() == 'post') {
-            $files = $this->request->getFileMultiple('dokumen');
+            $files = $this->request->getFiles();
             foreach($files['dokumen'] as $dkm){
                 if($dkm->isValid() && !$dkm->hasMoved()){
                     $fileName = $dkm->getRandomName();

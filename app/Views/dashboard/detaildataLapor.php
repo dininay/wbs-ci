@@ -124,11 +124,7 @@
                         <div class="col-lg-12">
                             <a href="javascript:history.back()" class="btn btn-primary">Kembali</a>
                             <a href="/DashboardController/edit/<?= $data['id']; ?>" class="btn btn-warning">Edit</a>
-                            <form action="/dashboard/dataLapor/<?= $data['id']; ?>" method="post" class="d-inline">
-                                <?= csrf_field(); ?>
-                                <input type="hidden" name="_method" value="Delete">
-                                <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?');">Delete</button>
-                            </form>
+                            <a href="/DashboardController/delete/<?= $data['id'];?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?');">Hapus</a>
                         </div>
                     </div>
                   </form>

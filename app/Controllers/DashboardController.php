@@ -19,29 +19,33 @@ class DashboardController extends BaseController
     
     public function index()
     {
-        $dashboardData = $this->dashboardModels->getData(); 
-        $data['dashboardData'] = $dashboardData;
+        $model = new dashboardModels(); // Ganti YourModel dengan nama model Anda
 
-        return view('dashboard/index', $data);
+        $total = $this->getTotalReports($model);
+        $genderData = $this->getGenderData($model);
+        $reportTypeData = $this->getReportTypeData($model);
+
+        return view('/dashboard/index', [
+            'total' => $total,
+            'genderData' => $genderData,
+            'reportTypeData' => $reportTypeData
+        ]);
     }
 
-    // public function dashboard()
-    // {
-    //     // Panggil model untuk mendapatkan data
-    //     $data = $this->getDataForChart();
+    protected function getTotalReports($model)
+    {
+        return $model->countAll();
+    }
 
-    //     // Kirim data ke view
-    //     return view('dashboard/index', ['chartData' => $data]);
-    // }
+    protected function getGenderData($model)
+    {
+        return $model->select('jk, COUNT(*) as total')->groupBy('jk')->findAll();
+    }
 
-    // private function getDataForChart()
-    // {
-    //     // Panggil model untuk mengambil data
-    //     $model = new DashboardModels(); // Sesuaikan dengan nama model Anda
-    //     $data = $model->getDataForChart();
-
-    //     return $data;
-    // }
+    protected function getReportTypeData($model)
+    {
+        return $model->select('sifat_pelapor, COUNT(*) as total')->groupBy('sifat_pelapor')->findAll();
+    }
 
     public function dataLapor()
     {
@@ -70,8 +74,19 @@ class DashboardController extends BaseController
 
     public function delete($id)
     {
-        $this->laporModels->delete($id);
-        return redirect()->to('/dashboard/dataLapor');
+        //model initialize
+        $postModel = new laporModels();
+
+        $post = $postModel->find($id);
+
+        if($post) {
+            $postModel->delete($id);
+
+            //flash message
+            session()->setFlashdata('message', 'Post Berhasil Dihapus');
+
+            return redirect()->to(base_url('/dashboard/dataLapor'));
+        }
     }
 
     public function edit($id){
