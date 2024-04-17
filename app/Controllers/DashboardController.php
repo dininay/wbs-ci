@@ -101,6 +101,7 @@ class DashboardController extends BaseController
 
     public function delete($id)
     {
+        $id=$this->request->getPost('_method');
         //model initialize
         $postModel = new laporModels();
 

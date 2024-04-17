@@ -124,7 +124,10 @@
                         <div class="col-lg-12">
                             <a href="javascript:history.back()" class="btn btn-primary">Kembali</a>
                             <a href="/DashboardController/edit/<?= $data['id']; ?>" class="btn btn-warning">Edit</a>
-                            <a href="/DashboardController/delete/<?= $data['id'];?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?');">Hapus</a>
+                            <form action="/dashboard/delete/<?= $data['id']; ?>" method="post">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn btn-danger">Hapus</button>
+                            </form>
                         </div>
                     </div>
                   </form>
