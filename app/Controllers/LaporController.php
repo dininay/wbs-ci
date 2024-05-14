@@ -113,6 +113,7 @@ class LaporController extends Controller
             'lokasi' => $this->request->getVar('lokasi'),
             'kronologi' => $this->request->getVar('kronologi'),
             'nominalKerugian' => $this->request->getVar('nominalKerugian'),
+            'cerita' => $this->request->getVar('cerita'),
             'dokumen' => $dokumenString,
             'status' => 'Sedang Ditinjau',
             'catatan' => '',

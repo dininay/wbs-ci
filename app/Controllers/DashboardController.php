@@ -27,6 +27,12 @@ class DashboardController extends BaseController
         $dataPerDay = $this->getDataPerDay($model);
         $dataPerMonth = $this->getDataPerMonth($model);
         $dataPerYear = $this->getDataPerYear($model);
+        
+    // Get data for status chart
+    $statusChart = $this->getStatusChartData($model);
+
+    // Get data for jenis pelanggaran chart
+    $jenisPelanggaranChart = $this->getJenisPelanggaranChartData($model);
 
         return view('/dashboard/index', [
             'total' => $total,
@@ -34,9 +40,35 @@ class DashboardController extends BaseController
             'reportTypeData' => $reportTypeData,
             'dataPerDay' => $dataPerDay,
             'dataPerMonth' => $dataPerMonth,
-            'dataPerYear' => $dataPerYear
+            'dataPerYear' => $dataPerYear,
+            'statusChart' => $statusChart,
+            'jenisPelanggaranChart' => $jenisPelanggaranChart
         ]);
     }
+    
+    protected function getStatusChartData($model)
+{
+    // Logic to fetch data for status chart
+    // Example:
+    return [
+        'Sedang ditinjau' => 10,
+        'Dalam proses penyelidikan' => 20,
+        'Laporan disetujui' => 15,
+        'Laporan selesai' => 5,
+    ];
+}
+
+protected function getJenisPelanggaranChartData($model)
+{
+    // Logic to fetch data for jenis pelanggaran chart
+    // Example:
+    return [
+        'Fraud' => 8,
+        'Pelanggaran Kode Etik' => 12,
+        'Pelanggaran Benturan Kepentingan' => 5,
+        'Pelanggaran Hukum' => 10,
+    ];
+}
 
     protected function getTotalReports($model)
     {
@@ -101,7 +133,6 @@ class DashboardController extends BaseController
 
     public function delete($id)
     {
-        $id=$this->request->getPost('_method');
         //model initialize
         $postModel = new laporModels();
 
@@ -134,7 +165,8 @@ class DashboardController extends BaseController
         $validation = \Config\Services::validation();
         if (!$this->validate([
             // Sesuaikan dengan aturan validasi yang Anda butuhkan
-            'status' => 'required|in_list[Sedang ditinjau,Dalam proses penyelidikan,Laporan disetujui,Laporan selesai]'
+            'status' => 'required|in_list[Sedang ditinjau,Dalam proses penyelidikan,Laporan disetujui,Laporan selesai]',
+            'catatan' => 'required'
             // Tambahkan validasi untuk field lainnya
         ])) {
             // Jika validasi gagal, kembali ke halaman sebelumnya dengan pesan kesalahan validasi
@@ -144,6 +176,7 @@ class DashboardController extends BaseController
         // Ambil data dari form
         $data = [
             'status' => $this->request->getVar('status'),
+            'catatan' => $this->request->getVar('catatan'),
             // Ambil dan tambahkan field lainnya sesuai kebutuhan
         ];
 
@@ -151,7 +184,7 @@ class DashboardController extends BaseController
         $this->laporModels->update($id, $data);
 
         // Redirect kembali ke halaman dashboard setelah pembaruan data
-        return redirect()->to(base_url('dashboard/dataLapor'))->with('success', 'Status berhasil diperbarui.');
+        return redirect()->to(site_url('dashboard/dataLapor'))->with('success', 'Status berhasil diperbarui.');
     }
     public function detail($id){
         $data['data'] = $this->laporModels->find($id);

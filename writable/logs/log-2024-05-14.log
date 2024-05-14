@@ -1,0 +1,35 @@
+INFO - 2024-05-14 06:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:41:28 --> BadMethodCallException: Call to undefined method App\Models\DashboardModels::countByStatus
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\DashboardController.php(32): CodeIgniter\Model->__call('countByStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-05-14 06:42:02 --> BadMethodCallException: Call to undefined method App\Models\DashboardModels::countByStatus
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\DashboardController.php(32): CodeIgniter\Model->__call('countByStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-05-14 06:42:04 --> BadMethodCallException: Call to undefined method App\Models\DashboardModels::countByStatus
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\DashboardController.php(32): CodeIgniter\Model->__call('countByStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
+CRITICAL - 2024-05-14 06:42:04 --> BadMethodCallException: Call to undefined method App\Models\DashboardModels::countByStatus
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\DashboardController.php(32): CodeIgniter\Model->__call('countByStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\wbs-ci\\public\\index.php')
